@@ -1,0 +1,112 @@
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\ApplicationInsights.config
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\csc.exe
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\System.Collections.Immutable.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\vbc.exe
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\VBCSCompiler.exe
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\roslyn\VBCSCompiler.exe.config
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Web Programlama Dersi Proje Ödevi.dll.config
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Web Programlama Dersi Proje Ödevi.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Web Programlama Dersi Proje Ödevi.pdb
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.Web.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.WindowsServer.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.ApplicationInsights.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.Web.Infrastructure.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Helpers.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Mvc.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Razor.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.Deployment.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.Razor.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.Web.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.WindowsServer.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.ApplicationInsights.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Razor.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.Deployment.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.Razor.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Helpers.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\System.Web.Mvc.xml
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\obj\Debug\Web Programlama Dersi Proje Ödevi.dll
+c:\users\emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\obj\Debug\Web Programlama Dersi Proje Ödevi.pdb
+C:\Users\Emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\EntityFramework.dll
+C:\Users\Emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\EntityFramework.SqlServer.dll
+C:\Users\Emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\EntityFramework.xml
+C:\Users\Emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\EntityFramework.SqlServer.xml
+C:\Users\Emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\obj\Debug\Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.resources
+C:\Users\Emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\obj\Debug\Web Programlama Dersi Proje Ödevi.csproj.GenerateResource.Cache
+C:\Users\Emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\bin\en\Web Programlama Dersi Proje Ödevi.resources.dll
+C:\Users\Emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\obj\Debug\Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.en.resources
+C:\Users\Emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\obj\Debug\en\Web Programlama Dersi Proje Ödevi.resources.dll
+C:\Users\Emrullah\documents\visual studio 2015\Projects\Web Programlama Dersi Proje Ödevi\obj\Debug\Web Programlama Dersi Proje Ödevi.csprojResolveAssemblyReference.cache
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\obj\Debug\Web Programlama Dersi Proje Ödevi.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\obj\Debug\Web Programlama Dersi Proje Ödevi.pdb
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\ApplicationInsights.config
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Web Programlama Dersi Proje Ödevi.dll.config
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Web Programlama Dersi Proje Ödevi.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Web Programlama Dersi Proje Ödevi.pdb
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\en\Web Programlama Dersi Proje Ödevi.resources.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\EntityFramework.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\EntityFramework.SqlServer.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.DependencyCollector.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.Web.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.WindowsServer.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.ApplicationInsights.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.Web.Infrastructure.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Helpers.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Mvc.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Razor.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.Deployment.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.Razor.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\EntityFramework.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\EntityFramework.SqlServer.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.DependencyCollector.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.Web.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.AI.WindowsServer.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.ApplicationInsights.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Razor.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.Deployment.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Webpages.Razor.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Helpers.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\System.Web.Mvc.xml
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\obj\Debug\Web Programlama Dersi Proje Ödevi.csprojAssemblyReference.cache
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\obj\Debug\Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.resources
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\obj\Debug\Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.en.resources
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\obj\Debug\Web Programlama Dersi Proje Ödevi.csproj.GenerateResource.cache
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\obj\Debug\Web Programlama Dersi Proje Ödevi.csproj.CoreCompileInputs.cache
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\obj\Debug\en\Web Programlama Dersi Proje Ödevi.resources.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\obj\Debug\Web Programlama Dersi Proje Ödevi.csproj.CopyComplete
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\csc.exe
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\System.Collections.Immutable.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\System.Reflection.Metadata.dll
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\vbc.exe
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\VBCSCompiler.exe
+E:\Ana Sayfa\SAKARYA ÜNİVERSİTESİ\2.     SINIF\1. Yarıyıl\Web Programlama\Proje\Proje Ödevi\Web Programlama Dersi Proje Ödevi\bin\roslyn\VBCSCompiler.exe.config

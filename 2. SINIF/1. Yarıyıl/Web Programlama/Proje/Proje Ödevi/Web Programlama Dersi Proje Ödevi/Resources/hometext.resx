@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="adres" xml:space="preserve">
+    <value>Sakarya Üniversitesi Teknokent A Blok No:24</value>
+  </data>
+  <data name="AdSoyad" xml:space="preserve">
+    <value>Ad - Soyad</value>
+  </data>
+  <data name="AlanındaUzman" xml:space="preserve">
+    <value>Alanında Uzman Teknisyenlerimiz İle 7/24 destek sağlıyoruz.</value>
+  </data>
+  <data name="AnaSayfa" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="Araclar" xml:space="preserve">
+    <value>Araçlar</value>
+  </data>
+  <data name="AraclariGoruntule" xml:space="preserve">
+    <value>Araçları Görüntüle</value>
+  </data>
+  <data name="baslik" xml:space="preserve">
+    <value>SAU-CAR AVRUPANIN HERYERİNDE.....</value>
+  </data>
+  <data name="BizimleİletişimeGeçin" xml:space="preserve">
+    <value>Bizimle İletişime Geçin</value>
+  </data>
+  <data name="BizimMüşterilerimizAslaYoldaKalmıyor" xml:space="preserve">
+    <value>Bizim Müşterilerimiz Asla Yolda Kalmıyor...</value>
+  </data>
+  <data name="BizimİçinPara" xml:space="preserve">
+    <value>Bizim İçin Para Her Zaman İkinci Planda... Öneml Olan Siz Değerli Müşterilerimiz...</value>
+  </data>
+  <data name="BüyükDestek" xml:space="preserve">
+    <value>Büyük Destek</value>
+  </data>
+  <data name="calisma" xml:space="preserve">
+    <value>Pzt - Cum 09:00 - 18:00</value>
+  </data>
+  <data name="CikisYap" xml:space="preserve">
+    <value>Cıkış Yap</value>
+  </data>
+  <data name="Dahayeni" xml:space="preserve">
+    <value>Daha yeni, daha güvenli filo</value>
+  </data>
+  <data name="Detaylar" xml:space="preserve">
+    <value>Detaylar..</value>
+  </data>
+  <data name="Düzenle" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="Ekle" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="GeriDön" xml:space="preserve">
+    <value>Geri Dön</value>
+  </data>
+  <data name="GirisYap" xml:space="preserve">
+    <value>Giriş Yap</value>
+  </data>
+  <data name="Günlükhaftalık" xml:space="preserve">
+    <value>Günlük, haftalık, aylık, kısa ve uzun süreli araç kiralama</value>
+  </data>
+  <data name="Hakkimizda" xml:space="preserve">
+    <value>Hakkımızda</value>
+  </data>
+  <data name="HerhangiBirSıkıntıİle" xml:space="preserve">
+    <value>Herhangi Bir Sıkıntı İle Karşılaştığınız Zaman Bir Telefon Kadar Yakınınızdayız..</value>
+  </data>
+  <data name="Iletisim" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="Kaydet" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="KayitOl" xml:space="preserve">
+    <value>Kayıt Ol</value>
+  </data>
+  <data name="Kolayonlinerezervasyon" xml:space="preserve">
+    <value>Kolay online rezervasyon</value>
+  </data>
+  <data name="Konu" xml:space="preserve">
+    <value>Konu</value>
+  </data>
+  <data name="KullanicilariGörüntüle" xml:space="preserve">
+    <value>Kullanıcıları Görüntüle</value>
+  </data>
+  <data name="KullanıcıAdı" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="Kullanıcılar" xml:space="preserve">
+    <value>Kullanıcılar..</value>
+  </data>
+  <data name="mesaj" xml:space="preserve">
+    <value>Mesajınız...</value>
+  </data>
+  <data name="mesajıgönder" xml:space="preserve">
+    <value>Mesajı Gönder ..</value>
+  </data>
+  <data name="MüşterilerimizeSunduğumuzHizmetler" xml:space="preserve">
+    <value>Müşterilerimize Sunduğumuz Hizmetler</value>
+  </data>
+  <data name="nedensau" xml:space="preserve">
+    <value>NEDEN SAU-CAR ??</value>
+  </data>
+  <data name="OlumluYorumlar" xml:space="preserve">
+    <value>Olumlu Yorumlar</value>
+  </data>
+  <data name="ProfesyonelServis" xml:space="preserve">
+    <value>Profesyonel Servis</value>
+  </data>
+  <data name="Sepet" xml:space="preserve">
+    <value>Sepet..</value>
+  </data>
+  <data name="sepeteekle" xml:space="preserve">
+    <value>Sepete Ekle..</value>
+  </data>
+  <data name="SepetiListele" xml:space="preserve">
+    <value>Sepeti Listele</value>
+  </data>
+  <data name="SepettenCıkar" xml:space="preserve">
+    <value>Sepetten Çıkar...</value>
+  </data>
+  <data name="sifretekrarı" xml:space="preserve">
+    <value>ŞİFRE TEKRARI</value>
+  </data>
+  <data name="Sil" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="Sizinfikirleriniz" xml:space="preserve">
+    <value>Your ideas are important to us!</value>
+  </data>
+  <data name="SizlerdenAldığımızOlumluYorumlar" xml:space="preserve">
+    <value>Sizlerden Aldığımız Olumlu Yorumlar Sayesinde İşimizi Daha Severek Yapıyoruz..</value>
+  </data>
+  <data name="TeknikBeceriler" xml:space="preserve">
+    <value>Teknik Beceriler</value>
+  </data>
+  <data name="TeknisyenlerimizİşleriniBüyük" xml:space="preserve">
+    <value>Teknisyenlerimiz İşlerini Büyük Bir Özveri İle Gerçekleştiriyor..</value>
+  </data>
+  <data name="Uygunfiyatlıkiralamaseçenekleri" xml:space="preserve">
+    <value>Uygun fiyatlı kiralama seçenekleri</value>
+  </data>
+  <data name="UzmanTeknisyenler" xml:space="preserve">
+    <value>Uzman Teknisyenler</value>
+  </data>
+  <data name="yazi" xml:space="preserve">
+    <value>Türkiye’de araba kiralamak, ülkenin sunduğu vahşi ve çeşitli manzaraları keşfetmek için uygun maliyetli bir yoldur. Şehir arabalarından ve minibüslerden lüks kiralık araçlara kadar, SAUCAR , eğlencenizi en üst düzeye çıkarmanıza yardımcı olacak çok çeşitli modellere sahiptir. SAUCAR ’nın ülke geneline yayılmış 116 istasyonu vardır. En popüler toplama noktaları, Brisbane gibi şehirlerin yanı sıra sörfçü cenneti - Gold Coast boyunca bulunan istasyonları da içermektedir. Sydney Havaalanı ve Melbourne Havaalanı en popüler olanlardandır ve kiralıklarınızı almanızı ve indikten hemen sonra yola çıkmanızı sağlar.</value>
+  </data>
+  <data name="ÖdemeKolaylığı" xml:space="preserve">
+    <value>Ödeme Kolaylığı</value>
+  </data>
+  <data name="admin" xml:space="preserve">
+    <value>Admin Durumu</value>
+  </data>
+  <data name="AlimTarihi" xml:space="preserve">
+    <value>Alım Tarihi</value>
+  </data>
+  <data name="AracFiyat" xml:space="preserve">
+    <value>Araç Fiyatı</value>
+  </data>
+  <data name="AracModel" xml:space="preserve">
+    <value>Araç Modeli</value>
+  </data>
+  <data name="AracTuru" xml:space="preserve">
+    <value>Araç Türü</value>
+  </data>
+  <data name="sifre" xml:space="preserve">
+    <value>Şifre</value>
+  </data>
+  <data name="TeslimTarihi" xml:space="preserve">
+    <value>Teslim Tarihi</value>
+  </data>
+  <data name="adminsepettencikar" xml:space="preserve">
+    <value>İşlemi İptal Et</value>
+  </data>
+  <data name="aracisil" xml:space="preserve">
+    <value>Aracı Sil</value>
+  </data>
+  <data name="profil" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="sepettekiaracisec" xml:space="preserve">
+    <value>Aracı Secin</value>
+  </data>
+</root>

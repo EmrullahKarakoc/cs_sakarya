@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    function kontrol()
+    {
+        alert(document.getElementById('p').value==document.getElementById('p2').value)
+    }
+    function sil()
+    {
+        document.getElementById('kAdi').value=" ";
+    }
+    </script>
+</head>
+<body>
+    <form method="post" action="deneme.html">
+        Kullanici Adiniz:<input type="text" name="kAd" id"kAdi" value="id gir.."onclick="sil()"><br>
+        Parola:<input type="password" name="parola"id="p"><br>
+        Parola Tekrari:<input type="password" name="tparola"id="p2"><br>
+        Cinsiyetiniz: 
+        Kadýn<input type="radio" name="b" value="Kadin" checked>
+        Erkek<input type="radio" name="b" value="Erkek"><br>
+        Mail:<input id="emailAddress" type="email">
+        <select name="mail">
+                <option value="0">@gmail.com</option>
+                <option value="1">@hotmail.com</option>
+                <option value="2">@outlook.com</option>
+                <option value="3">@yahoo.com</option>
+                <option value="4">@sakarya.edu.tr</option>
+            </select><br>
+        Tel:<input id="telNo" type="tel"><br>
+        Dogum tarihi:<input id="month" type="month"> <br>
+        Sinifiniz: 
+        Hazirlik <input type="radio" name="a" value="hazirlik">
+        1.Sinif  <input type="radio" name="a" value="bir">
+        2.Sinif  <input type="radio" name="a" value="iki">
+        3.Sinif  <input type="radio" name="a" value="uc">
+        4.Sinif  <input type="radio" name="a" value="dort"> <br>
+        Sinif seciniz:
+        <select name="sinif">
+            <option value="0">Hazirlik</option>
+            <option value="1">1.sinif</option>
+            <option value="2">2.sinif</option>
+            <option value="3">3.sinif</option>
+            <option value="4">4.sinif</option>
+        </select><br>
+        Takim:
+        <input type="checkbox" value="cicek" name "h1"checked>Barca
+        <input type="checkbox" value="cicek" name "h1">Real
+        <input type="checkbox" value="cicek" name "h1">Bayern
+        <input type="checkbox" value="cicek" name "h1">Juve <br>
+        En sevdiginiz renk: <input type="color"checked="" ><br>
+        Adress:<br><textarea name="Adress:" cols="20" row="7"></textarea>
+        <br>
+        <input type="submit" value="Kaydet" onclick="kontrol()">
+        <input type="button" value="Kontrol" onclick="kontrol()">
+    </form>
+</body>
+</html>

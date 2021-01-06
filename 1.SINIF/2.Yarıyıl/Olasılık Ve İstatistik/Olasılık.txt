@@ -1,0 +1,26 @@
+********************************************************************************************************			
+				TEKRARLI PERMÜTASYON
+
+** Kelebek kelimesinin harfleri deðiþtirilrek anlamlý anlamsýz kaç kelime oluþturulabilir ?
+
+				7!
+			       ----
+			       3!*2!
+** 112330151 rakamlarý deðiþtirilerek 10 basamaklý kaç sayý yazýlýr?
+
+			10!         9!
+		      ------  -  -------    
+                       4!*3!       4!*3!
+		  (bütün durum)    (0'ýn baþta olduðu durum)
+** Yuvarlak masanýn permütasyonu þöyledir. n kiþi (n-1)! lekilde bir masa etrafýna oturabilirler.
+	
+********************************************************************************************************
+				VARYANS 
+
+E[x^2]   -   {E[x]}^2
+
+E: Beklenen Deðer
+E[x^2]	==  toplam { x^2 * p(x) }
+E[x]  	==  toplam { x   * p(x) }
+
+********************************************************************************************************

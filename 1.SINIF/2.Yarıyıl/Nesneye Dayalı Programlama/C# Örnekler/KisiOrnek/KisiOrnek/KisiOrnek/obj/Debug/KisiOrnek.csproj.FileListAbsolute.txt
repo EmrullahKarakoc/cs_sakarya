@@ -1,0 +1,12 @@
+G:\dersler\NDP\20172018\hafta5\1c\KisiOrnek\KisiOrnek\bin\Debug\KisiOrnek.exe.config
+G:\dersler\NDP\20172018\hafta5\1c\KisiOrnek\KisiOrnek\bin\Debug\KisiOrnek.exe
+G:\dersler\NDP\20172018\hafta5\1c\KisiOrnek\KisiOrnek\bin\Debug\KisiOrnek.pdb
+G:\dersler\NDP\20172018\hafta5\1c\KisiOrnek\KisiOrnek\obj\Debug\KisiOrnek.csprojResolveAssemblyReference.cache
+G:\dersler\NDP\20172018\hafta5\1c\KisiOrnek\KisiOrnek\obj\Debug\KisiOrnek.exe
+G:\dersler\NDP\20172018\hafta5\1c\KisiOrnek\KisiOrnek\obj\Debug\KisiOrnek.pdb
+E:\Masaüstü\KisiOrnek\KisiOrnek\KisiOrnek\bin\Debug\KisiOrnek.exe.config
+E:\Masaüstü\KisiOrnek\KisiOrnek\KisiOrnek\obj\Debug\KisiOrnek.exe
+E:\Masaüstü\KisiOrnek\KisiOrnek\KisiOrnek\obj\Debug\KisiOrnek.pdb
+E:\Masaüstü\KisiOrnek\KisiOrnek\KisiOrnek\bin\Debug\KisiOrnek.exe
+E:\Masaüstü\KisiOrnek\KisiOrnek\KisiOrnek\bin\Debug\KisiOrnek.pdb
+E:\Masaüstü\KisiOrnek\KisiOrnek\KisiOrnek\obj\Debug\KisiOrnek.csprojResolveAssemblyReference.cache

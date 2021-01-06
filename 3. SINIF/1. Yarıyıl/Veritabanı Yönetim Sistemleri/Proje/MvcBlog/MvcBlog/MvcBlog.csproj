@@ -1,0 +1,653 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B877515-778A-409C-B8DD-D8B15FB5325F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MvcBlog</RootNamespace>
+    <AssemblyName>MvcBlog</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNet.Mvc.Grid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.Mvc.Grid.1.0.1\lib\NET45\AspNet.Mvc.Grid.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GridMvc, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grid.Mvc.3.0.0\lib\net40\GridMvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\AdminPaneli\blank.html" />
+    <Content Include="Content\AdminPaneli\cards.html" />
+    <Content Include="Content\AdminPaneli\charts.html" />
+    <Content Include="Content\AdminPaneli\css\sb-admin.css" />
+    <Content Include="Content\AdminPaneli\css\sb-admin.min.css" />
+    <Content Include="Content\AdminPaneli\forgot-password.html" />
+    <Content Include="Content\AdminPaneli\gulpfile.js" />
+    <Content Include="Content\AdminPaneli\index.html" />
+    <Content Include="Content\AdminPaneli\js\sb-admin-charts.js" />
+    <Content Include="Content\AdminPaneli\js\sb-admin-charts.min.js" />
+    <Content Include="Content\AdminPaneli\js\sb-admin-datatables.js" />
+    <Content Include="Content\AdminPaneli\js\sb-admin-datatables.min.js" />
+    <Content Include="Content\AdminPaneli\js\sb-admin.js" />
+    <Content Include="Content\AdminPaneli\js\sb-admin.min.js" />
+    <Content Include="Content\AdminPaneli\login.html" />
+    <Content Include="Content\AdminPaneli\navbar.html" />
+    <Content Include="Content\AdminPaneli\register.html" />
+    <Content Include="Content\AdminPaneli\tables.html" />
+    <Content Include="Content\AdminPaneli\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Content\AdminPaneli\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Content\AdminPaneli\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Content\AdminPaneli\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\AdminPaneli\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\AdminPaneli\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\AdminPaneli\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Content\AdminPaneli\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\AdminPaneli\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\AdminPaneli\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\AdminPaneli\vendor\chart.js\Chart.bundle.js" />
+    <Content Include="Content\AdminPaneli\vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="Content\AdminPaneli\vendor\chart.js\Chart.js" />
+    <Content Include="Content\AdminPaneli\vendor\chart.js\Chart.min.js" />
+    <Content Include="Content\AdminPaneli\vendor\datatables\dataTables.bootstrap4.css" />
+    <Content Include="Content\AdminPaneli\vendor\datatables\dataTables.bootstrap4.js" />
+    <Content Include="Content\AdminPaneli\vendor\datatables\jquery.dataTables.js" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\AdminPaneli\vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="Content\AdminPaneli\vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="Content\AdminPaneli\vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="Content\AdminPaneli\vendor\jquery\jquery.js" />
+    <Content Include="Content\AdminPaneli\vendor\jquery\jquery.min.js" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\blog-home.css" />
+    <Content Include="Content\Gridmvc.css" />
+    <Content Include="Content\gulpfile.js" />
+    <Content Include="Content\index.html" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\vendor\jquery\jquery.js" />
+    <Content Include="Content\vendor\jquery\jquery.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\.gitignore" />
+    <Content Include="Content\.travis.yml" />
+    <Content Include="Content\LICENSE" />
+    <Content Include="Content\package.json" />
+    <Content Include="Content\README.md" />
+    <Content Include="Content\AdminPaneli\.gitignore" />
+    <Content Include="Content\AdminPaneli\.jsbeautifyrc" />
+    <Content Include="Content\AdminPaneli\.travis.yml" />
+    <Content Include="Content\AdminPaneli\LICENSE" />
+    <Content Include="Content\AdminPaneli\package.json" />
+    <Content Include="Content\AdminPaneli\pug\blank.pug" />
+    <Content Include="Content\AdminPaneli\pug\cards.pug" />
+    <Content Include="Content\AdminPaneli\pug\charts.pug" />
+    <Content Include="Content\AdminPaneli\pug\forgot-password.pug" />
+    <Content Include="Content\AdminPaneli\pug\includes\css\core.pug" />
+    <Content Include="Content\AdminPaneli\pug\includes\css\custom.pug" />
+    <Content Include="Content\AdminPaneli\pug\includes\footer.pug" />
+    <Content Include="Content\AdminPaneli\pug\includes\js\core.pug" />
+    <Content Include="Content\AdminPaneli\pug\includes\js\custom.pug" />
+    <Content Include="Content\AdminPaneli\pug\includes\modals\logout.pug" />
+    <Content Include="Content\AdminPaneli\pug\includes\navbar.pug" />
+    <Content Include="Content\AdminPaneli\pug\includes\scroll-to-top.pug" />
+    <Content Include="Content\AdminPaneli\pug\index.pug" />
+    <Content Include="Content\AdminPaneli\pug\login.pug" />
+    <Content Include="Content\AdminPaneli\pug\navbar.pug" />
+    <Content Include="Content\AdminPaneli\pug\register.pug" />
+    <Content Include="Content\AdminPaneli\pug\tables.pug" />
+    <Content Include="Content\AdminPaneli\README.md" />
+    <Content Include="Content\AdminPaneli\scss\navbar\_navbar_colors.scss" />
+    <Content Include="Content\AdminPaneli\scss\navbar\_navbar_fixed.scss" />
+    <Content Include="Content\AdminPaneli\scss\navbar\_navbar_global.scss" />
+    <Content Include="Content\AdminPaneli\scss\navbar\_navbar_static.scss" />
+    <Content Include="Content\AdminPaneli\scss\navbar\_navbar_toggle.scss" />
+    <Content Include="Content\AdminPaneli\scss\sb-admin.scss" />
+    <Content Include="Content\AdminPaneli\scss\_cards.scss" />
+    <Content Include="Content\AdminPaneli\scss\_footer.scss" />
+    <Content Include="Content\AdminPaneli\scss\_global.scss" />
+    <Content Include="Content\AdminPaneli\scss\_login.scss" />
+    <Content Include="Content\AdminPaneli\scss\_mixins.scss" />
+    <Content Include="Content\AdminPaneli\scss\_utilities.scss" />
+    <Content Include="Content\AdminPaneli\scss\_variables.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\animated.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\core.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\icons.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\larger.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\list.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\mixins.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\path.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\stacked.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\less\variables.less" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_core.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_list.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_path.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="Content\AdminPaneli\vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="Grid.mvc.readme" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\gridmvc.js" />
+    <Content Include="Scripts\gridmvc.lang.ru.js" />
+    <Content Include="Scripts\gridmvc.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\tinymce.3.4.5\langs\en.js" />
+    <Content Include="Scripts\tinymce.3.4.5\license.txt" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advhr\css\advhr.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advhr\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advhr\js\rule.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advhr\rule.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advimage\css\advimage.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advimage\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advimage\image.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advimage\img\sample.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advimage\js\image.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advlink\css\advlink.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advlink\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advlink\js\advlink.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advlink\link.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advlist\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\advlist\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\autolink\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\autolink\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\autoresize\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\autosave\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\autosave\langs\en.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\bbcode\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\directionality\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\emotions.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\js\emotions.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\example\dialog.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\example\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\example\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\example\img\example.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\example\js\dialog.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\example\langs\en.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\example\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\example_dependency\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\example_dependency\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\fullpage\css\fullpage.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\fullpage\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\fullpage\fullpage.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\fullpage\js\fullpage.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\iespell\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\inlinepopups\template.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\layer\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\layer\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\legacyoutput\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\lists\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\lists\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\media\css\media.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\media\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\media\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\media\js\embed.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\media\js\media.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\media\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\media\media.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\media\moxieplayer.swf" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\noneditable\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\paste\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\paste\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\paste\js\pastetext.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\paste\js\pasteword.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\paste\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\paste\pastetext.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\paste\pasteword.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\preview\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\preview\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\preview\example.html" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\preview\jscripts\embed.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\preview\preview.html" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\print\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\print\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\save\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\save\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\spellchecker\css\content.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\spellchecker\img\wline.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\style\css\props.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\style\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\style\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\style\js\props.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\style\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\style\props.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\cell.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\css\cell.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\css\row.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\css\table.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\js\cell.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\js\merge_cells.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\js\row.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\js\table.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\merge_cells.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\row.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\table\table.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\template\blank.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\template\css\template.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\template\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\template\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\template\js\template.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\template\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\template\template.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\visualchars\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\wordcount\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\del.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="Scripts\tinymce.3.4.5\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\about.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\anchor.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\charmap.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\color_picker.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\editor_template.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\editor_template_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\image.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\img\flash.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\img\icons.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\img\iframe.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\img\pagebreak.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\img\quicktime.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\img\realmedia.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\img\shockwave.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\img\trans.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\img\video.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\img\windowsmedia.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\js\about.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\js\anchor.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\js\charmap.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\js\color_picker.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\js\image.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\js\link.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\js\source_editor.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\langs\en.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\langs\en_dlg.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\link.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\shortcuts.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\default\content.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\default\dialog.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\default\ui.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\highcontrast\content.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\highcontrast\dialog.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\highcontrast\ui.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\advanced\source_editor.htm" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\simple\editor_template.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\simple\editor_template_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\simple\img\icons.gif" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\simple\langs\en.js" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\simple\skins\default\content.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\simple\skins\default\ui.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\simple\skins\o2k7\content.css" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="Scripts\tinymce.3.4.5\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="Scripts\tinymce.3.4.5\tiny_mce.js" />
+    <Content Include="Scripts\tinymce.3.4.5\tiny_mce_popup.js" />
+    <Content Include="Scripts\tinymce.3.4.5\tiny_mce_src.js" />
+    <Content Include="Scripts\tinymce.3.4.5\utils\editable_selects.js" />
+    <Content Include="Scripts\tinymce.3.4.5\utils\form_utils.js" />
+    <Content Include="Scripts\tinymce.3.4.5\utils\mctabs.js" />
+    <Content Include="Scripts\tinymce.3.4.5\utils\validate.js" />
+    <Content Include="Uploads\deneme\1.jpg" />
+    <Content Include="Uploads\deneme\2.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminKategoriController.cs" />
+    <Compile Include="Controllers\AdminMakaleController.cs" />
+    <Compile Include="Controllers\AdminUyeController.cs" />
+    <Compile Include="Controllers\AdminYorumController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TinyMCESampleController.cs" />
+    <Compile Include="Controllers\UyeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Etiket.cs" />
+    <Compile Include="Models\Ilce.cs" />
+    <Compile Include="Models\Kategori.cs" />
+    <Compile Include="Models\Makale.cs" />
+    <Compile Include="Models\mvcblogDB.cs" />
+    <Compile Include="Models\Rozet.cs" />
+    <Compile Include="Models\Sehir.cs" />
+    <Compile Include="Models\TablolarDB.cs" />
+    <Compile Include="Models\TinyMCEModel.cs" />
+    <Compile Include="Models\Ulke.cs" />
+    <Compile Include="Models\Uye.cs" />
+    <Compile Include="Models\Yetki.cs" />
+    <Compile Include="Models\Yorum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Hakkimizda.cshtml" />
+    <Content Include="Views\Home\Iletisim.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Home\KategoriPartial.cshtml" />
+    <Content Include="Views\AdminMakale\Index.cshtml" />
+    <Content Include="Views\AdminMakale\Create.cshtml" />
+    <Content Include="Views\AdminMakale\Edit.cshtml" />
+    <Content Include="Views\AdminMakale\Delete.cshtml" />
+    <Content Include="Views\AdminKategori\Create.cshtml" />
+    <Content Include="Views\AdminKategori\Delete.cshtml" />
+    <Content Include="Views\AdminKategori\Details.cshtml" />
+    <Content Include="Views\AdminKategori\Edit.cshtml" />
+    <Content Include="Views\AdminKategori\Index.cshtml" />
+    <Content Include="Views\Uye\Create.cshtml" />
+    <Content Include="Views\Uye\Login.cshtml" />
+    <Content Include="Views\Uye\Index.cshtml" />
+    <Content Include="Views\Uye\Edit.cshtml" />
+    <Content Include="Views\Home\MakaleDetayı.cshtml" />
+    <Content Include="Views\Shared\_GridPager.cshtml" />
+    <Content Include="Views\Shared\_Grid.cshtml" />
+    <Content Include="Views\Home\KategoriMakale.cshtml" />
+    <Content Include="Views\Shared\BlogAraPartial.cshtml" />
+    <Content Include="Views\Shared\BlogAra.cshtml" />
+    <Content Include="Views\Home\SonYorumlar.cshtml" />
+    <Content Include="Views\Home\PopulerMakaleler.cshtml" />
+    <Content Include="Views\Uye\UyeProfil.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\tinymce_full_compressed.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\tinymce_full.cshtml" />
+    <Content Include="Views\TinyMCESample\Index.cshtml" />
+    <Content Include="Views\AdminYorum\Create.cshtml" />
+    <Content Include="Views\AdminYorum\Delete.cshtml" />
+    <Content Include="Views\AdminYorum\Details.cshtml" />
+    <Content Include="Views\AdminYorum\Edit.cshtml" />
+    <Content Include="Views\AdminYorum\Index.cshtml" />
+    <Content Include="Views\AdminUye\Create.cshtml" />
+    <Content Include="Views\AdminUye\Delete.cshtml" />
+    <Content Include="Views\AdminUye\Details.cshtml" />
+    <Content Include="Views\AdminUye\Edit.cshtml" />
+    <Content Include="Views\AdminUye\Index.cshtml" />
+    <Content Include="Views\Home\Error.cshtml" />
+    <Content Include="Views\Shared\sliderpartial.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Uploads\MakaleFoto\" />
+    <Folder Include="Uploads\UyeFoto\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50012</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50012/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

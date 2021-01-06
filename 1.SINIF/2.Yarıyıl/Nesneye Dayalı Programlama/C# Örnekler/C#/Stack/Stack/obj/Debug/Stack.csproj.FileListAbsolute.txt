@@ -1,0 +1,2 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\Stack\Stack\bin\Debug\Stack.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\Stack\Stack\obj\Debug\Stack.csprojResolveAssemblyReference.cache

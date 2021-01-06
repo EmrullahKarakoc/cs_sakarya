@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mvcblogdatabaseModelStoreContainer" CdmEntityContainer="mvcblogdatabaseEntities">
+    <EntitySetMapping Name="Uye">
+      <EntityTypeMapping TypeName="mvcblogdatabaseModel.Uye">
+        <MappingFragment StoreEntitySet="Uye">
+          <ScalarProperty Name="Uyeid" ColumnName="Uyeid" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Yetkiid" ColumnName="Yetkiid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

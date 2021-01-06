@@ -1,0 +1,58 @@
+﻿@model Web_Programlama_Dersi_Proje_Ödevi.Models.Sepet
+
+@{
+    ViewBag.Title = Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Sil;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+
+<div>
+    <h4>Sepet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SepetAlimTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SepetAlimTarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SepetTeslimTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SepetTeslimTarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Arac.AracModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Arac.AracModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.UserName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Sil" class="btn btn-danger" /> |
+            @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.GeriDön, "Index")
+        </div>
+    }
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br />

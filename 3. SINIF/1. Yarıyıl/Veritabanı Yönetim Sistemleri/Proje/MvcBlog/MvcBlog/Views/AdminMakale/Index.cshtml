@@ -1,0 +1,75 @@
+﻿@using PagedList
+@using PagedList.Mvc
+
+@model IPagedList<MvcBlog.Models.Makale>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 class="card-header">Makaleler</h2>
+
+<p>
+    @Html.ActionLink("Yeni Makale", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.Label("Kategori Adı")
+        </th>
+        <th>
+            @Html.Label("Başlık")
+        </th>
+        
+        <th>
+            @Html.Label("Foto")
+        </th>
+        <th>
+            @Html.Label("Tarih")
+        </th>
+        <th>
+            @Html.Label("Okunma")
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kategori.KategoriAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Baslik)
+        </td>
+        
+        <td>
+           <img width="75" img src="@item.Foto"/>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tarih)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Okuma)
+        </td>
+        <td>
+            @Html.ActionLink("Düzenle", "Edit", new { id=item.Makaleid }) |
+            @Html.ActionLink("Detay", "Details", new { id=item.Makaleid }) |
+            @Html.ActionLink("Sil", "Delete", new { id=item.Makaleid })
+        </td>
+    </tr>
+}
+
+</table>
+<div class="row">
+    <div class="col-md-8 text-center">
+        <div class="pagedList pagination-lg ">
+            @Html.PagedListPager(Model, Page => Url.Action("Index", new { Page }), PagedListRenderOptions.Classic)
+
+        </div>
+
+    </div>
+
+</div>

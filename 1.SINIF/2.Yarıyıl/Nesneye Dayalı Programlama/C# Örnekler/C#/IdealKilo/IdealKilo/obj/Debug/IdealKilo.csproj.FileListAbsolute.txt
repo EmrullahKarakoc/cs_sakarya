@@ -1,0 +1,8 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\IdealKilo\IdealKilo\bin\Debug\IdealKilo.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\IdealKilo\IdealKilo\bin\Debug\IdealKilo.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\IdealKilo\IdealKilo\bin\Debug\IdealKilo.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\IdealKilo\IdealKilo\obj\Debug\IdealKilo.Form1.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\IdealKilo\IdealKilo\obj\Debug\IdealKilo.Properties.Resources.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\IdealKilo\IdealKilo\obj\Debug\IdealKilo.csproj.GenerateResource.Cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\IdealKilo\IdealKilo\obj\Debug\IdealKilo.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\IdealKilo\IdealKilo\obj\Debug\IdealKilo.pdb

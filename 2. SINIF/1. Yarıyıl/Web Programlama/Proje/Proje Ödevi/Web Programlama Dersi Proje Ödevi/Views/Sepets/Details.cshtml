@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Web_Programlama_Dersi_Proje_Ödevi.Models.Sepet>
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SepetAlimTarihi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SepetTeslimTarihi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Arac.AracModel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SepetAlimTarihi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SepetTeslimTarihi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Arac.AracModel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SepetID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SepetID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SepetID })
+        </td>
+    </tr>
+}
+
+</table>

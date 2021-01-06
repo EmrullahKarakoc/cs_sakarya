@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Iletisim;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <section class="banner-area relative" id="home" style="background-image:url(https://i.hizliresim.com/r5V5r7.jpg)">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="about-content col-lg-12">
+                    <h1 class="text-white">
+                      @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.BizimleİletişimeGeçin
+                    </h1>
+                    <p class="text-white link-nav">@Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.AnaSayfa, "Index", "Home") &nbsp; -> &nbsp; @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Iletisim, "Iletisim", "Home")</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Start contact-page Area -->
+    <section class="contact-page-area section-gap" style="background-color:gray)">
+        <div class="container">
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12092.344205467289!2d30.335921!3d40.738132!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa82c42f614e5ca1!2sSakarya+Teknokent!5e0!3m2!1str!2str!4v1545064550283" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> </center>
+            <br />
+            <div class="row">
+                <div class="col-lg-4 d-flex flex-column address-wrap">
+                    <div class="single-contact-address d-flex flex-row">
+                        <a><img src="https://i.hizliresim.com/v6Lydv.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="contact-details">
+                            <span class="glyphicon glyphicon-envelope"></span><h5>Serdivan / Sakarya</h5>
+                            <p> @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.adres</p>
+                        </div>
+                    </div>
+                    <div class="single-contact-address d-flex flex-row">
+                        <a><img src="https://i.hizliresim.com/jg2AJr.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="contact-details">
+                            <span class="glyphicon glyphicon-envelope"></span><h5>0264 355 55 55 </h5>
+                            <p>@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.calisma</p>
+                        </div>
+                    </div>
+                    <div class="single-contact-address d-flex flex-row">
+                        <a><img src="https://i.hizliresim.com/Ba0G9p.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="contact-details">
+                            <span class="glyphicon glyphicon-envelope"></span><h5>SauCar@saucar.com</h5>
+                            <p>@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Sizinfikirleriniz</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <form class="form-area " id="myForm" class="contact-form text-right">
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <input name="name" placeholder="@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.AdSoyad" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ad - Soyad'" class="common-input mb-20 form-control" required="" type="text">
+
+
+                                <input name="subject" placeholder="@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Konu" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Konu'" class="common-input mb-20 form-control" required="" type="text">
+                                <div class="mt-20 alert-msg" style="text-align: left;"></div>
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <textarea class="common-textarea form-control" name="message" placeholder="@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.mesaj" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mesajınız..'" required=""></textarea>
+                                <button class="primary-btn mt-20 text-white" style="float: right;">@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.mesajıgönder</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>

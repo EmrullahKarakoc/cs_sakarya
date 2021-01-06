@@ -1,0 +1,6 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\Hesaplama\Hesaplama\bin\Debug\Hesaplama.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\Hesaplama\Hesaplama\bin\Debug\Hesaplama.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\Hesaplama\Hesaplama\bin\Debug\Hesaplama.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\Hesaplama\Hesaplama\obj\Debug\Hesaplama.csprojResolveAssemblyReference.cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\Hesaplama\Hesaplama\obj\Debug\Hesaplama.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\Hesaplama\Hesaplama\obj\Debug\Hesaplama.pdb

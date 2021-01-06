@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Web_Programlama_Dersi_Proje_Ödevi.Models.Arac>
+
+@{
+    ViewBag.Title = Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Araclar;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br /><br /><br /><br /><br /><br /><br />
+<table class="table" style="margin-top:17px;">
+    <tr>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.AracModel
+        </th>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.AracFiyat
+        </th>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.AracTuru
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracModel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracFiyat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracTuru)
+        </td>
+        @if(Session["IsAdmin"] == null && Session["UserName"] != null)
+        {
+            <td>
+                @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.sepeteekle, "Create", "Sepets")
+            </td>
+        }    
+    </tr>
+}
+
+</table>
+
+<br /><br /><br /><br /><br /><br /><br />
+

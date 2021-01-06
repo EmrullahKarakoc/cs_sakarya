@@ -1,0 +1,9 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\CreateNewObject\CreateNewObject\bin\Debug\CreateNewObject.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\CreateNewObject\CreateNewObject\bin\Debug\CreateNewObject.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\CreateNewObject\CreateNewObject\bin\Debug\CreateNewObject.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\CreateNewObject\CreateNewObject\obj\Debug\CreateNewObject.Form1.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\CreateNewObject\CreateNewObject\obj\Debug\CreateNewObject.Properties.Resources.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\CreateNewObject\CreateNewObject\obj\Debug\CreateNewObject.csproj.GenerateResource.Cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\CreateNewObject\CreateNewObject\obj\Debug\CreateNewObject.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\CreateNewObject\CreateNewObject\obj\Debug\CreateNewObject.pdb
+C:\Users\ÇAĞLAYAN\Documents\Visual Studio 2012\Projects\CreateNewObject\CreateNewObject\obj\Debug\CreateNewObject.csprojResolveAssemblyReference.cache

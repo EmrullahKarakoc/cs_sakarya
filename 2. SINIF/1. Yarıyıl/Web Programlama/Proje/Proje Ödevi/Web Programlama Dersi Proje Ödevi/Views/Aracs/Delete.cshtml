@@ -1,0 +1,48 @@
+﻿@model Web_Programlama_Dersi_Proje_Ödevi.Models.Arac
+
+@{
+    ViewBag.Title = Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Sil;
+    if (Session["Isadmin"] == null) { Response.Redirect("~/GirisKayitIslemleri/Giris"); }
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+<center>
+
+    <dl class="dl-horizontal" style="margin-top:21px">
+        <dt>
+            @Html.DisplayNameFor(model => model.AracModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracFiyat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracFiyat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AracTuru)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AracTuru)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Sil" class="btn btn-danger" /> |
+            @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.GeriDön, "Index")
+        </div>
+    }
+</center>
+<br /><br /><br /><br /><br /><br /><br /><br />

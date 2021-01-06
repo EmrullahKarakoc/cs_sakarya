@@ -1,0 +1,8 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\BirimDönüştürücü-TabPages\BirimDönüştürücü-TabPages\bin\Debug\BirimDönüştürücü-TabPages.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\BirimDönüştürücü-TabPages\BirimDönüştürücü-TabPages\bin\Debug\BirimDönüştürücü-TabPages.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\BirimDönüştürücü-TabPages\BirimDönüştürücü-TabPages\bin\Debug\BirimDönüştürücü-TabPages.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\BirimDönüştürücü-TabPages\BirimDönüştürücü-TabPages\obj\Debug\BirimDönüştürücü_TabPages.Form1.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\BirimDönüştürücü-TabPages\BirimDönüştürücü-TabPages\obj\Debug\BirimDönüştürücü_TabPages.Properties.Resources.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\BirimDönüştürücü-TabPages\BirimDönüştürücü-TabPages\obj\Debug\BirimDönüştürücü-TabPages.csproj.GenerateResource.Cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\BirimDönüştürücü-TabPages\BirimDönüştürücü-TabPages\obj\Debug\BirimDönüştürücü-TabPages.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\BirimDönüştürücü-TabPages\BirimDönüştürücü-TabPages\obj\Debug\BirimDönüştürücü-TabPages.pdb

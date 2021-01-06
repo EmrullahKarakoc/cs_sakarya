@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SauCarModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Arac">
+    <Key>
+      <PropertyRef Name="AracId" />
+    </Key>
+    <Property Name="AracId" Type="int" Nullable="false" />
+    <Property Name="AracModel" Type="nvarchar" MaxLength="50" />
+    <Property Name="AracFiyat" Type="nvarchar" MaxLength="50" />
+    <Property Name="AracTuru" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SauCar.dbo.Sepet' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Sepet">
+    <Key>
+      <PropertyRef Name="SepetUserID" />
+      <PropertyRef Name="SepetAracId" />
+    </Key>
+    <Property Name="SepetUserID" Type="int" Nullable="false" />
+    <Property Name="SepetAracId" Type="int" Nullable="false" />
+    <Property Name="SepetAlimTarihi" Type="nvarchar" MaxLength="50" />
+    <Property Name="SepetTeslimTarihi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsAdmin" Type="bit" />
+  </EntityType>
+  <Association Name="FK_Sepet_Arac">
+    <End Role="Arac" Type="Self.Arac" Multiplicity="1" />
+    <End Role="Sepet" Type="Self.Sepet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Arac">
+        <PropertyRef Name="AracId" />
+      </Principal>
+      <Dependent Role="Sepet">
+        <PropertyRef Name="SepetAracId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sepet_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Sepet" Type="Self.Sepet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Sepet">
+        <PropertyRef Name="SepetUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SauCarModel1StoreContainer">
+    <EntitySet Name="Arac" EntityType="Self.Arac" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sepet" EntityType="Self.Sepet" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Sepet].[SepetUserID] AS [SepetUserID], 
+    [Sepet].[SepetAracId] AS [SepetAracId], 
+    [Sepet].[SepetAlimTarihi] AS [SepetAlimTarihi], 
+    [Sepet].[SepetTeslimTarihi] AS [SepetTeslimTarihi]
+    FROM [dbo].[Sepet] AS [Sepet]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Sepet_Arac" Association="Self.FK_Sepet_Arac">
+      <End Role="Arac" EntitySet="Arac" />
+      <End Role="Sepet" EntitySet="Sepet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sepet_User" Association="Self.FK_Sepet_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Sepet" EntitySet="Sepet" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

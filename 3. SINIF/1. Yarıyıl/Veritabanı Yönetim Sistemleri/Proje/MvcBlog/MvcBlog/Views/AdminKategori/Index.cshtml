@@ -1,0 +1,32 @@
+﻿@model IEnumerable<MvcBlog.Models.Kategori>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<h2 class="card-header">Kategoriler</h2>
+<p>
+    @Html.ActionLink("Yeni Kategori", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KategoriAdi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.KategoriAdi)
+        </td>
+        <td>
+            @Html.ActionLink("Düzenle", "Edit", new { id=item.Kategoriid }) |
+            @Html.ActionLink("Detay", "Details", new { id=item.Kategoriid }) |
+            @Html.ActionLink("Sil", "Delete", new { id=item.Kategoriid })
+        </td>
+    </tr>
+}
+
+</table>

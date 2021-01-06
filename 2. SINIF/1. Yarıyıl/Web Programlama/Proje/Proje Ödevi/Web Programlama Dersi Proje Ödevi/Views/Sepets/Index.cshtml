@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Web_Programlama_Dersi_Proje_Ödevi.Models.Sepet>
+
+@{
+    ViewBag.Title = Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Sepet;
+    if (Session["Isadmin"] == null) { Response.Redirect("~/GirisKayitIslemleri/Giris"); }
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br /><br /><br /><br /><br /><br /><br />
+
+<table class="table">
+    <tr>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.AlimTarihi
+        </th>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.TeslimTarihi
+        </th>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.AracModel
+        </th>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.KullanıcıAdı
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SepetAlimTarihi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SepetTeslimTarihi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Arac.AracModel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.UserName)
+            </td>
+            <td>
+                @Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.adminsepettencikar, "Delete", new { id = item.SepetID })
+            </td>
+        </tr>
+    }
+
+</table>
+<br /><br /><br /><br /><br /><br /><br />

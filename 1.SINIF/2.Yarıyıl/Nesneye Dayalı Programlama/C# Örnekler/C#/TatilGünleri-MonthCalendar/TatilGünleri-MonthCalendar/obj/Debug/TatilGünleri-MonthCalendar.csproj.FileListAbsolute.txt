@@ -1,0 +1,8 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\TatilGünleri-MonthCalendar\TatilGünleri-MonthCalendar\bin\Debug\TatilGünleri-MonthCalendar.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\TatilGünleri-MonthCalendar\TatilGünleri-MonthCalendar\bin\Debug\TatilGünleri-MonthCalendar.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\TatilGünleri-MonthCalendar\TatilGünleri-MonthCalendar\bin\Debug\TatilGünleri-MonthCalendar.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\TatilGünleri-MonthCalendar\TatilGünleri-MonthCalendar\obj\Debug\TatilGünleri_MonthCalendar.Form1.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\TatilGünleri-MonthCalendar\TatilGünleri-MonthCalendar\obj\Debug\TatilGünleri_MonthCalendar.Properties.Resources.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\TatilGünleri-MonthCalendar\TatilGünleri-MonthCalendar\obj\Debug\TatilGünleri-MonthCalendar.csproj.GenerateResource.Cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\TatilGünleri-MonthCalendar\TatilGünleri-MonthCalendar\obj\Debug\TatilGünleri-MonthCalendar.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\TatilGünleri-MonthCalendar\TatilGünleri-MonthCalendar\obj\Debug\TatilGünleri-MonthCalendar.pdb

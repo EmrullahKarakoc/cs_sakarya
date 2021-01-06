@@ -1,0 +1,6 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\Stack\Stack\bin\Debug\Stack.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\Stack\Stack\bin\Debug\Stack.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\Stack\Stack\bin\Debug\Stack.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\Stack\Stack\obj\Debug\Stack.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\Stack\Stack\obj\Debug\Stack.pdb
+C:\Users\ÇAĞLAYAN\Documents\Visual Studio 2012\Projects\Stack\Stack\obj\Debug\StackClass.csprojResolveAssemblyReference.cache

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SauCarModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Arac">
+    <Key>
+      <PropertyRef Name="AracId" />
+    </Key>
+    <Property Name="AracId" Type="Int32" Nullable="false" />
+    <Property Name="AracModel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AracFiyat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AracTuru" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sepet" Relationship="Self.FK_Sepet_Arac" FromRole="Arac" ToRole="Sepet" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <NavigationProperty Name="Sepet" Relationship="Self.FK_Sepet_User" FromRole="User" ToRole="Sepet" />
+  </EntityType>
+  <EntityType Name="Sepet">
+    <Key>
+      <PropertyRef Name="SepetUserID" />
+      <PropertyRef Name="SepetAracId" />
+    </Key>
+    <Property Name="SepetUserID" Type="Int32" Nullable="false" />
+    <Property Name="SepetAracId" Type="Int32" Nullable="false" />
+    <Property Name="SepetAlimTarihi" Type="DateTime" Precision="0" />
+    <Property Name="SepetTeslimTarihi" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Arac" Relationship="Self.FK_Sepet_Arac" FromRole="Sepet" ToRole="Arac" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Sepet_User" FromRole="Sepet" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_Sepet_Arac">
+    <End Role="Arac" Type="Self.Arac" Multiplicity="1" />
+    <End Role="Sepet" Type="Self.Sepet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Arac">
+        <PropertyRef Name="AracId" />
+      </Principal>
+      <Dependent Role="Sepet">
+        <PropertyRef Name="SepetAracId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sepet_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Sepet" Type="Self.Sepet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Sepet">
+        <PropertyRef Name="SepetUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SauCarEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Arac" EntityType="Self.Arac" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <EntitySet Name="Sepet" EntityType="Self.Sepet" />
+    <AssociationSet Name="FK_Sepet_Arac" Association="Self.FK_Sepet_Arac">
+      <End Role="Arac" EntitySet="Arac" />
+      <End Role="Sepet" EntitySet="Sepet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sepet_User" Association="Self.FK_Sepet_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Sepet" EntitySet="Sepet" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

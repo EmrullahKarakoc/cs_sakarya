@@ -1,0 +1,9 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\FormUygulama-1\FormUygulama-1\bin\Debug\FormUygulama-1.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\FormUygulama-1\FormUygulama-1\bin\Debug\FormUygulama-1.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\FormUygulama-1\FormUygulama-1\bin\Debug\FormUygulama-1.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\FormUygulama-1\FormUygulama-1\obj\Debug\FormUygulama-1.csprojResolveAssemblyReference.cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\FormUygulama-1\FormUygulama-1\obj\Debug\FormUygulama_1.Form1.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\FormUygulama-1\FormUygulama-1\obj\Debug\FormUygulama_1.Properties.Resources.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\FormUygulama-1\FormUygulama-1\obj\Debug\FormUygulama-1.csproj.GenerateResource.Cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\FormUygulama-1\FormUygulama-1\obj\Debug\FormUygulama-1.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\FormUygulama-1\FormUygulama-1\obj\Debug\FormUygulama-1.pdb

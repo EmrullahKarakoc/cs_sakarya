@@ -1,0 +1,9 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\NotHesaplama\NotHesaplama\bin\Debug\NotHesaplama.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\NotHesaplama\NotHesaplama\bin\Debug\NotHesaplama.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\NotHesaplama\NotHesaplama\bin\Debug\NotHesaplama.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\NotHesaplama\NotHesaplama\obj\Debug\NotHesaplama.csprojResolveAssemblyReference.cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\NotHesaplama\NotHesaplama\obj\Debug\NotHesaplama.Form1.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\NotHesaplama\NotHesaplama\obj\Debug\NotHesaplama.Properties.Resources.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\NotHesaplama\NotHesaplama\obj\Debug\NotHesaplama.csproj.GenerateResource.Cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\NotHesaplama\NotHesaplama\obj\Debug\NotHesaplama.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\NotHesaplama\NotHesaplama\obj\Debug\NotHesaplama.pdb

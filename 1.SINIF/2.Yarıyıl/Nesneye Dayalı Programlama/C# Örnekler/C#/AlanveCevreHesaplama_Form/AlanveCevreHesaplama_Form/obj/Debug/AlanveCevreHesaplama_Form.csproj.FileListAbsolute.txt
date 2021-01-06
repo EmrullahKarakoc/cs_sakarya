@@ -1,0 +1,9 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\AlanveCevreHesaplama_Form\AlanveCevreHesaplama_Form\bin\Debug\AlanveCevreHesaplama_Form.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\AlanveCevreHesaplama_Form\AlanveCevreHesaplama_Form\obj\Debug\AlanveCevreHesaplama_Form.Form1.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\AlanveCevreHesaplama_Form\AlanveCevreHesaplama_Form\obj\Debug\AlanveCevreHesaplama_Form.Properties.Resources.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\AlanveCevreHesaplama_Form\AlanveCevreHesaplama_Form\obj\Debug\AlanveCevreHesaplama_Form.csproj.GenerateResource.Cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\AlanveCevreHesaplama_Form\AlanveCevreHesaplama_Form\bin\Debug\AlanveCevreHesaplama_Form.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\AlanveCevreHesaplama_Form\AlanveCevreHesaplama_Form\bin\Debug\AlanveCevreHesaplama_Form.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\AlanveCevreHesaplama_Form\AlanveCevreHesaplama_Form\obj\Debug\AlanveCevreHesaplama_Form.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\AlanveCevreHesaplama_Form\AlanveCevreHesaplama_Form\obj\Debug\AlanveCevreHesaplama_Form.pdb
+C:\Users\ÇAĞLAYAN\Documents\Visual Studio 2012\Projects\AlanveCevreHesaplama_Form\AlanveCevreHesaplama_Form\obj\Debug\AlanveCevreHesaplama_Form.csprojResolveAssemblyReference.cache

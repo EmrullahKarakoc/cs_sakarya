@@ -1,0 +1,5 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\QueueClass\QueueClass\bin\Debug\QueueClass.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\QueueClass\QueueClass\bin\Debug\QueueClass.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\QueueClass\QueueClass\bin\Debug\QueueClass.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\QueueClass\QueueClass\obj\Debug\QueueClass.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\QueueClass\QueueClass\obj\Debug\QueueClass.pdb

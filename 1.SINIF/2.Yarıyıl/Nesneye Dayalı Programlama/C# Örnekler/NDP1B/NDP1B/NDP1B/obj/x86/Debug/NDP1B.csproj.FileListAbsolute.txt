@@ -1,0 +1,23 @@
+C:\Users\betul\Desktop\c# dersiden esintiler\NDP1B\NDP1B\bin\Debug\NDP1B.exe
+C:\Users\betul\Desktop\c# dersiden esintiler\NDP1B\NDP1B\bin\Debug\NDP1B.pdb
+C:\Users\betul\Desktop\c# dersiden esintiler\NDP1B\NDP1B\obj\x86\Debug\NDP1B.Form1.resources
+C:\Users\betul\Desktop\c# dersiden esintiler\NDP1B\NDP1B\obj\x86\Debug\NDP1B.Properties.Resources.resources
+C:\Users\betul\Desktop\c# dersiden esintiler\NDP1B\NDP1B\obj\x86\Debug\NDP1B.csproj.GenerateResource.Cache
+C:\Users\betul\Desktop\c# dersiden esintiler\NDP1B\NDP1B\obj\x86\Debug\NDP1B.exe
+C:\Users\betul\Desktop\c# dersiden esintiler\NDP1B\NDP1B\obj\x86\Debug\NDP1B.pdb
+C:\Users\betul\Desktop\NDP1B\NDP1B\obj\x86\Debug\NDP1B.exe
+C:\Users\betul\Desktop\NDP1B\NDP1B\obj\x86\Debug\NDP1B.pdb
+C:\Users\betul\Desktop\NDP1B\NDP1B\bin\Debug\NDP1B.exe
+C:\Users\betul\Desktop\NDP1B\NDP1B\bin\Debug\NDP1B.pdb
+C:\Users\betul\Desktop\NDP1B\NDP1B\obj\x86\Debug\NDP1B.csprojResolveAssemblyReference.cache
+C:\Users\betul\Desktop\NDP1B\NDP1B\obj\x86\Debug\NDP1B.Form1.resources
+C:\Users\betul\Desktop\NDP1B\NDP1B\obj\x86\Debug\NDP1B.Properties.Resources.resources
+C:\Users\betul\Desktop\NDP1B\NDP1B\obj\x86\Debug\NDP1B.csproj.GenerateResource.Cache
+E:\Masaüstü\NDP1B\NDP1B\NDP1B\bin\Debug\NDP1B.exe
+E:\Masaüstü\NDP1B\NDP1B\NDP1B\bin\Debug\NDP1B.pdb
+E:\Masaüstü\NDP1B\NDP1B\NDP1B\obj\x86\Debug\NDP1B.csprojResolveAssemblyReference.cache
+E:\Masaüstü\NDP1B\NDP1B\NDP1B\obj\x86\Debug\NDP1B.Form1.resources
+E:\Masaüstü\NDP1B\NDP1B\NDP1B\obj\x86\Debug\NDP1B.Properties.Resources.resources
+E:\Masaüstü\NDP1B\NDP1B\NDP1B\obj\x86\Debug\NDP1B.csproj.GenerateResource.Cache
+E:\Masaüstü\NDP1B\NDP1B\NDP1B\obj\x86\Debug\NDP1B.exe
+E:\Masaüstü\NDP1B\NDP1B\NDP1B\obj\x86\Debug\NDP1B.pdb

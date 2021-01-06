@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>System.Web.Helpers</name>
+  </assembly>
+  <members>
+    <member name="T:System.Web.Helpers.Chart">
+      <summary>Verileri bir grafik tablo biçiminde görüntüler.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.#ctor(System.Int32,System.Int32,System.String,System.String)">
+      <summary>
+        <see cref="T:System.Web.Helpers.Chart" /> sınıfının yeni bir örneğini başlatır.</summary>
+      <param name="width">Tam grafik görüntüsünün piksel cinsinden genişliği.</param>
+      <param name="height">Tam grafik görüntüsünün piksel cinsinden yüksekliği.</param>
+      <param name="theme">(İsteğe bağlı) Grafiğe uygulanacak şablon (tema).</param>
+      <param name="themePath">(İsteğe bağlı) Grafiğe uygulanacak şablon (tema) yolu ve dosya adı.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.AddLegend(System.String,System.String)">
+      <summary>Grafiğe bir açıklama ekler.</summary>
+      <returns>Grafik.</returns>
+      <param name="title">Açıklama başlığının metni.</param>
+      <param name="name">Açıklamanın benzersiz adı.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.AddSeries(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Collections.IEnumerable,System.String,System.Collections.IEnumerable,System.String)">
+      <summary>Grafik için veri noktaları ve dizi öznitelikleri sağlar.</summary>
+      <returns>Grafik.</returns>
+      <param name="name">Dizinin benzersiz adı.</param>
+      <param name="chartType">Bir dizinin grafik türü.</param>
+      <param name="chartArea">Veri dizisini çizmek için kullanılan grafik alanının adı.</param>
+      <param name="axisLabel">Diziye ilişkin eksen etiketi metni.</param>
+      <param name="legend">Açıklamayla ilişkili dizinin adı.</param>
+      <param name="markerStep">Veri noktası işaretleyicilerinin parçalılıklığı.</param>
+      <param name="xValue">X ekseni boyunca çizmek için kullanılan değerler.</param>
+      <param name="xField">X değerlerine ilişkin alanın adı.</param>
+      <param name="yValues">Y ekseni boyunca çizmek için kullanılan değerler.</param>
+      <param name="yFields">Y eksenine ilişkin alanın veya alanların adının veya adlarının virgülle ayrılmış listesi.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.AddTitle(System.String,System.String)">
+      <summary>Grafiğe bir başlık ekler.</summary>
+      <returns>Grafik.</returns>
+      <param name="text">Başlık metni.</param>
+      <param name="name">Başlığın benzersiz adı.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.DataBindCrossTable(System.Collections.IEnumerable,System.String,System.String,System.String,System.String,System.String)">
+      <summary>Bir grafiği, bir sütundaki her bir benzersiz değer için bir dizinin oluşturulduğu bir veri tablosuna bağlar.</summary>
+      <returns>Grafik.</returns>
+      <param name="dataSource">Grafik veri kaynağı.</param>
+      <param name="groupByField">Verileri dizi halinde gruplandırmak için kullanılan sütunun adı.</param>
+      <param name="xField">X değerlerine ilişkin sütunun adı.</param>
+      <param name="yFields">Y değerlerine ilişkin sütunların adlarının virgülle ayrılmış listesi.</param>
+      <param name="otherFields">Bağlanabilecek diğer veri noktası özellikleri.</param>
+      <param name="pointSortOrder">Dizinin düzenleneceği sıra.Varsayılan değer "Artan" şeklindedir.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.DataBindTable(System.Collections.IEnumerable,System.String)">
+      <summary>Dizi verilerini oluşturur ve belirtilen veri tablosuna bağlar ve isteğe bağlı olarak birden çok x değerini doldurur.</summary>
+      <returns>Grafik.</returns>
+      <param name="dataSource">Grafik veri kaynağı.Bu, herhangi bir <see cref="T:System.Collections.IEnumerable" /> nesnesi olabilir.</param>
+      <param name="xField">Dizinin x değerleri için kullanılabilecek tablo sütununun adı.</param>
+    </member>
+    <member name="P:System.Web.Helpers.Chart.FileName">
+      <summary>Grafik görüntüsünü içeren dosyanın adını alır veya ayarlar.</summary>
+      <returns>Dosyanın adı.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.GetBytes(System.String)">
+      <summary>Bir grafik görüntüsünü bir bayt dizisi olarak döndürür.</summary>
+      <returns>Grafik.</returns>
+      <param name="format">Görüntü biçimi.Varsayılan değer "jpeg"dir.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.GetFromCache(System.String)">
+      <summary>Belirtilen grafiği önbellekten alır.</summary>
+      <returns>Grafik.</returns>
+      <param name="key">Alınacak grafiği içeren önbellek öğesinin tanıtıcısı.Anahtar, <see cref="M:System.Web.Helpers.Chart.SaveToCache(System.String,System.Int32,System.Boolean)" /> yöntemini çağırdığınızda ayarlanır.</param>
+    </member>
+    <member name="P:System.Web.Helpers.Chart.Height">
+      <summary>Grafik görüntüsünün yüksekliğini piksel cinsinden alır veya ayarlar.</summary>
+      <returns>Grafik yüksekliği.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.Save(System.String,System.String)">
+      <summary>Bir grafik görüntüsünü belirtilen dosyaya kaydeder.</summary>
+      <returns>Grafik.</returns>
+      <param name="path">Görüntü dosyasının yeri ve adı.</param>
+      <param name="format">Görüntü dosyasının, "png" veya "jpeg" gibi biçimi.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.SaveToCache(System.String,System.Int32,System.Boolean)">
+      <summary>Bir grafiği sistem önbelleğine kaydeder.</summary>
+      <returns>Grafiği içeren önbellek öğesinin tanıtıcısı.</returns>
+      <param name="key">Grafiğin önbellekteki tanıtıcısı.</param>
+      <param name="minutesToCache">Grafik görüntüsünün önbellekte saklanacağı dakika sayısı.Varsayılan değer, 20'dur.</param>
+      <param name="slidingExpiration">Öğeye her erişildiğinde grafik önbelleği öğesinin kullanım süresinin sıfırlandığını belirtmek için true veya kullanım süresinin, öğenin önbelleğe eklenişinden itibaren mutlak bir zaman aralığına dayalı olduğunu belirtmek için false şeklindedir.Varsayılan değer, true.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.SaveXml(System.String)">
+      <summary>Grafiği bir XML dosyası olarak kaydeder.</summary>
+      <returns>Grafik.</returns>
+      <param name="path">XML dosyasının yolu ve adı.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.SetXAxis(System.String,System.Double,System.Double)">
+      <summary>Yatay eksen için değerleri ayarlar.</summary>
+      <returns>Grafik.</returns>
+      <param name="title">X ekseninin başlığı.</param>
+      <param name="min">X eksenine ilişkin en küçük değer.</param>
+      <param name="max">X eksenine ilişkin en büyük değer.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.SetYAxis(System.String,System.Double,System.Double)">
+      <summary>Düşey eksen için değerleri ayarlar.</summary>
+      <returns>Grafik.</returns>
+      <param name="title">Y ekseninin başlığı.</param>
+      <param name="min">Y eksenine ilişkin en küçük değer.</param>
+      <param name="max">Y eksenine ilişkin en büyük değer.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.ToWebImage(System.String)">
+      <summary>Geçerli <see cref="T:System.Web.Helpers.Chart" /> nesnesine dayalı olarak bir <see cref="T:System.Web.Helpers.WebImage" /> nesnesi oluşturur.</summary>
+      <returns>Grafik.</returns>
+      <param name="format">
+        <see cref="T:System.Web.Helpers.WebImage" /> nesnesinin kaydedileceği görüntünün biçimi.Varsayılan değer "jpeg"dir.<paramref name="format" /> parametresi büyük küçük harfe duyarlı değildir.</param>
+    </member>
+    <member name="P:System.Web.Helpers.Chart.Width">
+      <summary>Grafik görüntüsünün genişliğini piksel cinsinden alır veya ayarlar.</summary>
+      <returns>Grafik genişliği.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.Write(System.String)">
+      <summary>
+        <see cref="T:System.Web.Helpers.Chart" /> nesnesinin çıkışını bir görüntü olarak oluşturur.</summary>
+      <returns>Grafik.</returns>
+      <param name="format">Görüntünün biçimi.Varsayılan değer "jpeg"dir.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Chart.WriteFromCache(System.String,System.String)">
+      <summary>Bir görüntü olarak önbelleğe kaydedilen bir <see cref="T:System.Web.Helpers.Chart" /> nesnesinin çıkışını oluşturur.</summary>
+      <returns>Grafik.</returns>
+      <param name="key">Grafiğin önbellekteki tanıtıcısı.</param>
+      <param name="format">Görüntünün biçimi.Varsayılan değer "jpeg"dir.</param>
+    </member>
+    <member name="T:System.Web.Helpers.ChartTheme">
+      <summary>Bir <see cref="T:System.Web.Helpers.Chart" /> nesnesi için görsel temaları belirtir.</summary>
+    </member>
+    <member name="F:System.Web.Helpers.ChartTheme.Blue">
+      <summary>Mavi gradyan, yuvarlatılmış kenarlar, gölge ve yüksek karşıtlıklı kılavuz çizgileri içeren bir 2B grafik teması.</summary>
+    </member>
+    <member name="F:System.Web.Helpers.ChartTheme.Green">
+      <summary>Yeşil gradyan, yuvarlatılmış kenarlar, gölge ve düşük karşıtlıklı kılavuz çizgileri içeren bir 2B grafik teması.</summary>
+    </member>
+    <member name="F:System.Web.Helpers.ChartTheme.Vanilla">
+      <summary>Herhangi bir görsel kapsayıcı ve kılavuz çizgisi içermeyen bir 2B grafik teması.</summary>
+    </member>
+    <member name="F:System.Web.Helpers.ChartTheme.Vanilla3D">
+      <summary>Herhangi bir görsel kapsayıcı içermeyen, sınırlı etiketleme ve seyrek, yüksek karşıtlıklı kılavuz çizgileri içeren bir 3B grafik teması.</summary>
+    </member>
+    <member name="F:System.Web.Helpers.ChartTheme.Yellow">
+      <summary>Sarı gradyan, yuvarlatılmış kenarlar, gölge ve yüksek karşıtlıklı kılavuz çizgileri içeren bir 2B grafik teması.</summary>
+    </member>
+    <member name="T:System.Web.Helpers.Crypto">
+      <summary>Karma değerler ve şifreleme parolaları ve diğer hassas verileri üretmek için yöntemler sağlar.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.Crypto.GenerateSalt(System.Int32)">
+      <summary>Şifreleme açısından güçlü bir rastgele bayt değerleri dizisi üretir.</summary>
+      <returns>64 tabanlı kodlanmış bir dize olarak üretilen salt değer.</returns>
+      <param name="byteLength">Üretilecek, şifreleme açısından rastgele bayt sayısı.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Crypto.Hash(System.Byte[],System.String)">
+      <summary>Belirtilen bayt dizisi için bir karma değer döndürür.</summary>
+      <returns>On altılı bir karakter dizisi olarak, <paramref name="input" /> için karma değer.</returns>
+      <param name="input">Kendisi için bir karma değer sağlanacak veriler.</param>
+      <param name="algorithm">Karma değeri üretmek için kullanılan algoritma.Varsayılan değer, "sha256"'dır.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="input" />null.</exception>
+    </member>
+    <member name="M:System.Web.Helpers.Crypto.Hash(System.String,System.String)">
+      <summary>Belirtilen dize için bir karma değer döndürür.</summary>
+      <returns>On altılı bir karakter dizisi olarak, <paramref name="input" /> için karma değer.</returns>
+      <param name="input">Kendisi için bir karma değer sağlanacak veriler.</param>
+      <param name="algorithm">Karma değeri üretmek için kullanılan algoritma.Varsayılan değer, "sha256"'dır.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="input" />null.</exception>
+    </member>
+    <member name="M:System.Web.Helpers.Crypto.HashPassword(System.String)">
+      <summary>Belirtilen parola için bir RFC 2898 karma değeri döndürür.</summary>
+      <returns>64 tabanlı kodlanmış bir dize olarak, <paramref name="password" /> için karma değer.</returns>
+      <param name="password">Kendisi için bir karma değer üretilecek parola.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="password" />null.</exception>
+    </member>
+    <member name="M:System.Web.Helpers.Crypto.SHA1(System.String)">
+      <summary>Belirtilen dize için bir SHA-1 karma değeri döndürür.</summary>
+      <returns>On altılı bir karakter dizisi olarak, <paramref name="input" /> için SHA-1 karma değeri.</returns>
+      <param name="input">Kendisi için bir karma değer sağlanacak veriler.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="input" />null.</exception>
+    </member>
+    <member name="M:System.Web.Helpers.Crypto.SHA256(System.String)">
+      <summary>Belirtilen dize için bir SHA-256 karma değeri döndürür.</summary>
+      <returns>On altılı bir karakter dizisi olarak, <paramref name="input" /> için SHA-256 karma değeri.</returns>
+      <param name="input">Kendisi için bir karma değer sağlanacak veriler.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="input" />null.</exception>
+    </member>
+    <member name="M:System.Web.Helpers.Crypto.VerifyHashedPassword(System.String,System.String)">
+      <summary>Belirtilen RFC 2898 karmasını ve parolanın şifreleme açısından eşleşip eşleşmediğini belirler.</summary>
+      <returns>Karma değer parola ile şifreleme açısından eşleşiyorsa true; aksi halde false şeklindedir.</returns>
+      <param name="hashedPassword">64 tabanlı bir dize olarak, önceden hesaplanan RFC 2898 karma değeri.</param>
+      <param name="password">
+        <paramref name="hashedPassword" /> ile şifreleme açısından karılaştırılacak düz metin biçiminde parola.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="hashedPassword" /> veya <paramref name="password" />boştur.</exception>
+    </member>
+    <member name="T:System.Web.Helpers.DynamicJsonArray">
+      <summary>Dinamik Dil Çalışma Zamanı yeteneklerini kullanarak, bir değer dizisini JavaScript benzeri bir dizi olarak temsil eder.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonArray.#ctor(System.Object[])">
+      <summary>Belirtilen dizi öğesi değerlerini kullanarak, <see cref="T:System.Web.Helpers.DynamicJsonArray" /> sınıfının yeni bir örneğini başlatır.</summary>
+      <param name="arrayValues">
+        <see cref="T:System.Web.Helpers.DynamicJsonArray" /> örneğine eklenecek değerleri içeren bir nesne dizisi.</param>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonArray.GetEnumerator">
+      <summary>
+        <see cref="T:System.Web.Helpers.DynamicJsonArray" /> örneğinin öğelerinde yineleme yapmak için kullanılabilecek bir numaralandırıcı döndürür.</summary>
+      <returns>JSON dizisinin öğelerinde yineleme yapmak için kullanılabilecek bir numaralandırıcı döndürür.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.DynamicJsonArray.Item(System.Int32)">
+      <summary>
+        <see cref="T:System.Web.Helpers.DynamicJsonArray" /> örneğinde belirtilen dizindeki değeri döndürür.</summary>
+      <returns>Belirtilen dizindeki değer.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.DynamicJsonArray.Length">
+      <summary>
+        <see cref="T:System.Web.Helpers.DynamicJsonArray" /> örneğindeki öğelerin sayısını döndürür.</summary>
+      <returns>JSON dizisindeki öğelerin sayısı.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonArray.op_Implicit(System.Web.Helpers.DynamicJsonArray)~System.Object[]">
+      <summary>Bir <see cref="T:System.Web.Helpers.DynamicJsonArray" /> örneğini bir nesne dizisine dönüştürür.</summary>
+      <returns>JSON dizisini temsil eden nesneler dizisi.</returns>
+      <param name="obj">Dönüştürülecek JSON dizisi.</param>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonArray.op_Implicit(System.Web.Helpers.DynamicJsonArray)~System.Array">
+      <summary>Bir <see cref="T:System.Web.Helpers.DynamicJsonArray" /> örneğini bir nesne dizisine dönüştürür.</summary>
+      <returns>JSON dizisini temsil eden nesneler dizisi.</returns>
+      <param name="obj">Dönüştürülecek JSON dizisi.</param>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonArray.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
+      <summary>Koleksiyonda yinelemek için kullanılabilecek bir numaralandırıcı döndürür.</summary>
+      <returns>Koleksiyonda yinelemek için kullanılabilecek bir numaralandırıcı.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonArray.TryConvert(System.Dynamic.ConvertBinder,System.Object@)">
+      <summary>
+        <see cref="T:System.Web.Helpers.DynamicJsonArray" /> örneğini uyumlu bir türe dönüştürür.</summary>
+      <returns>Dönüştürme başarılı olduysa true; aksi halde false şeklindedir.</returns>
+      <param name="binder">Dönüştürme işlemiyle ilgili bilgi sağlar.</param>
+      <param name="result">Bu yöntem döndürdüğünde, tür dönüştürme işleminin sonucunu içerir.Bu parametre, başlatmadan iletilir.</param>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonArray.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)">
+      <summary>Bir özel durum oluşturulmasına neden olmayacak şekilde, <see cref="T:System.Web.Helpers.DynamicJsonArray" /> örneğini dinamik üyeler (desteklenmeyen) için test eder.</summary>
+      <returns>Her durumda, true.</returns>
+      <param name="binder">get işlemiyle ilgili bilgi sağlar.</param>
+      <param name="result">Bu yöntem boş döndürür.Bu parametre, başlatmadan iletilir.</param>
+    </member>
+    <member name="T:System.Web.Helpers.DynamicJsonObject">
+      <summary>Dinamik Dil Çalışma Zamanı yeteneklerini kullanarak, bir değerler topluluğunu JavaScript benzeri bir nesne olarak temsil eder.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonObject.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})">
+      <summary>Belirtilen alan değerlerini kullanarak, <see cref="T:System.Web.Helpers.DynamicJsonObject" /> sınıfının yeni bir örneğini başlatır.</summary>
+      <param name="values">
+        <see cref="T:System.Web.Helpers.DynamicJsonObject" /> örneğine dinamik üye olarak eklenecek özellik adları ve değerlerin sözlüğü.</param>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonObject.GetDynamicMemberNames">
+      <summary>
+        <see cref="T:System.Web.Helpers.DynamicJsonObject" /> örneğinin tüm dinamik üyelerinin (JSON alanları) adını içeren bir liste döndürür.</summary>
+      <returns>Her bir dinamik üyenin (JSON alanı) adını içeren bir liste.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonObject.TryConvert(System.Dynamic.ConvertBinder,System.Object@)">
+      <summary>
+        <see cref="T:System.Web.Helpers.DynamicJsonObject" /> örneğini uyumlu bir türe dönüştürür.</summary>
+      <returns>Her durumda, true.</returns>
+      <param name="binder">Dönüştürme işlemiyle ilgili bilgi sağlar.</param>
+      <param name="result">Bu yöntem döndürdüğünde, tür dönüştürme işleminin sonucunu içerir.Bu parametre, başlatmadan iletilir.</param>
+      <exception cref="T:System.InvalidOperationException">
+        <see cref="T:System.Web.Helpers.DynamicJsonObject" /> örneği belirtilen türe dönüştürülemedi.</exception>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonObject.TryGetIndex(System.Dynamic.GetIndexBinder,System.Object[],System.Object@)">
+      <summary>Belirtilen dizini kullanarak, bir <see cref="T:System.Web.Helpers.DynamicJsonObject" /> alanının değerini alır.</summary>
+      <returns>Her durumda, true.</returns>
+      <param name="binder">Dizini oluşturulan get işlemiyle ilgili bilgi sağlar.</param>
+      <param name="indexes">Alanın ada göre dizinini oluşturan tek bir nesne içeren bir dizi.Nesne, döndürülecek JSON alanının adını belirten bir diziye dönüştürülmelidir.Birden çok dizin belirtilirse, bu yöntem döndürdüğünde <paramref name="result" />null içerir.</param>
+      <param name="result">Bu yöntem, dizini oluşturulan alanın değerini veya get işlemi başarılı olmadıysa null döndürür.Bu parametre, başlatmadan iletilir.</param>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonObject.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)">
+      <summary>Belirtilen adı kullanarak, bir <see cref="T:System.Web.Helpers.DynamicJsonObject" /> alanının değerini alır.</summary>
+      <returns>Her durumda, true.</returns>
+      <param name="binder">Get işlemiyle ilgili bilgi sağlar.</param>
+      <param name="result">Bu yöntem, alanın değerini veya alma işlemi başarılı olmadıysa null içerir.Bu parametre, başlatmadan iletilir.</param>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonObject.TrySetIndex(System.Dynamic.SetIndexBinder,System.Object[],System.Object)">
+      <summary>Belirtilen dizini kullanarak, bir <see cref="T:System.Web.Helpers.DynamicJsonObject" /> alanının değerini ayarlar.</summary>
+      <returns>Her durumda, true.</returns>
+      <param name="binder">Dizini oluşturulan ayarlama işlemiyle ilgili bilgi sağlar.</param>
+      <param name="indexes">Alanın ada göre dizinini oluşturan tek bir nesne içeren bir dizi.Nesne, döndürülecek JSON alanının adını belirten bir diziye dönüştürülmelidir.Birden çok dizin belirtilirse, hiçbir alan değiştirilmez veya eklenmez.</param>
+      <param name="value">Alanın ayarlanacağı değer.</param>
+    </member>
+    <member name="M:System.Web.Helpers.DynamicJsonObject.TrySetMember(System.Dynamic.SetMemberBinder,System.Object)">
+      <summary>Belirtilen adı kullanarak, bir <see cref="T:System.Web.Helpers.DynamicJsonObject" /> alanının değerini ayarlar.</summary>
+      <returns>Her durumda, true.</returns>
+      <param name="binder">Ayarlama işlemiyle ilgili bilgi sağlar.</param>
+      <param name="value">Alanın ayarlanacağı değer.</param>
+    </member>
+    <member name="T:System.Web.Helpers.Json">
+      <summary>JavaScript Nesne Gösterimi (JSON) biçiminde verilerle çalışmak için yöntemler sağlar.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.Json.Decode``1(System.String)">
+      <summary>JavaScript Nesne Gösterimi (JSON) biçimindeki verileri belirtilen kesin türü belirtilmiş veri listesine dönüştürür.</summary>
+      <returns>Kesin türü belirtilmiş bir listeye dönüştürülen JSON olarak kodlanmış veriler.</returns>
+      <param name="value">Dönüştürülecek JSON olarak kodlanmış dize.</param>
+      <typeparam name="T">JSON verilerinin dönüştürüleceği kesin türü belirtilmiş listenin türü.</typeparam>
+    </member>
+    <member name="M:System.Web.Helpers.Json.Decode(System.String)">
+      <summary>JavaScript Nesne Gösterimi (JSON) biçimindeki verileri bir veri nesnesine dönüştürür.</summary>
+      <returns>Bir veri nesnesine dönüştürülen JSON olarak kodlanmış veriler.</returns>
+      <param name="value">Dönüştürülecek JSON olarak kodlanmış dize.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Json.Decode(System.String,System.Type)">
+      <summary>JavaScript Nesne Gösterimi (JSON) biçimindeki verileri belirtilen türde bir veri nesnesine dönüştürür.</summary>
+      <returns>Belirtilen türe dönüştürülen JSON olarak kodlanmış veriler.</returns>
+      <param name="value">Dönüştürülecek JSON olarak kodlanmış dize.</param>
+      <param name="targetType">
+        <paramref name="value" /> verilerinin dönüştürülmesi gereken tür.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Json.Encode(System.Object)">
+      <summary>Bir veri nesnesini JavaScript Nesne Gösterimi (JSON) biçiminde bir dizeye dönüştürür.</summary>
+      <returns>JSON biçimine dönüştürülen bir veri dizesi döndürür.</returns>
+      <param name="value">Dönüştürülecek veri nesnesi.</param>
+    </member>
+    <member name="M:System.Web.Helpers.Json.Write(System.Object,System.IO.TextWriter)">
+      <summary>Bir veri nesnesini JavaScript Nesne Gösterimi (JSON) biçiminde bir dizeye dönüştürür ve dizeyi belirtilen <see cref="T:System.IO.TextWriter" /> nesneye ekler.</summary>
+      <param name="value">Dönüştürülecek veri nesnesi.</param>
+      <param name="writer">Dönüştürülen JSON verilerini içeren nesne.</param>
+    </member>
+    <member name="T:System.Web.Helpers.ObjectInfo">
+      <summary>Belirtilen nesnenin ve başvurduğu tüm alt nesnelerinin özellik adlarını ve değerlerini işler.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.ObjectInfo.Print(System.Object,System.Int32,System.Int32)">
+      <summary>Belirtilen nesnenin ve tüm alt nesnelerinin özellik adlarını ve değerlerini işler.</summary>
+      <returns>Basit bir değişken için, türü ve değeri döndürür.Birden çok öğe içeren bir nesne için, her bir özelliğin özellik adını veya anahtarını ve değerini döndürür.</returns>
+      <param name="value">Bilgi işlemenin hedefi olan nesne.</param>
+      <param name="depth">İsteğe bağlı.Bilgi işlemenin hedefi olan iç içe alt nesnelerin derinliğini belirtir.Varsayılan değer, 10'dur.</param>
+      <param name="enumerationLength">İsteğe bağlı.Yöntemin nesne değerleri için görüntüleyeceği en fazla karakter sayısını belirtir.Varsayılan değer, 1000'dur.</param>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="depth" />, sıfırdan küçüktür.</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="enumerationLength" />, sıfırdan küçüktür veya sıfıra eşittir.</exception>
+    </member>
+    <member name="T:System.Web.Helpers.ServerInfo">
+      <summary>Geçerli web sayfasını barındıran web sunucusu ortamı hakkındaki bilgileri görüntüler.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.ServerInfo.GetHtml">
+      <summary>Web sunucusu ortamı hakkındaki bilgileri görüntüler.</summary>
+      <returns>Web sunucusu hakkında bilgiler içeren ad-değer çiftlerinin bir dizesi. </returns>
+    </member>
+    <member name="T:System.Web.Helpers.SortDirection">
+      <summary>Öğe listesinin hangi yönde sıralanacağını belirtir.</summary>
+    </member>
+    <member name="F:System.Web.Helpers.SortDirection.Ascending">
+      <summary>En küçükten en büyüğe; örneğin, 1'den 10'a.</summary>
+    </member>
+    <member name="F:System.Web.Helpers.SortDirection.Descending">
+      <summary>En büyükten en küçüğe; örneğin, 10'dan 1'e.</summary>
+    </member>
+    <member name="T:System.Web.Helpers.WebCache">
+      <summary>Sık erişilen verileri depolamak için bir önbellek sağlar.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.WebCache.Get(System.String)">
+      <summary>Belirtilen öğeyi <see cref="T:System.Web.Helpers.WebCache" /> nesnesinden alır.</summary>
+      <returns>Önbellekten alınan öğe veya öğenin bulunamaması durumunda null.</returns>
+      <param name="key">Alınacak önbellek öğesinin tanımlayıcısı.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebCache.Remove(System.String)">
+      <summary>Belirtilen öğeyi <see cref="T:System.Web.Helpers.WebCache" /> nesnesinden kaldırır.</summary>
+      <returns>Öğe, <see cref="T:System.Web.Helpers.WebCache" /> nesnesinden kaldırılır.Öğenin bulunamaması durumunda, null döndürür.</returns>
+      <param name="key">Kaldırılacak önbellek öğesinin tanımlayıcısı.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebCache.Set(System.String,System.Object,System.Int32,System.Boolean)">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebCache" /> nesnesine bir öğe ekler.</summary>
+      <param name="key">Önbellek öğesinin tanımlayıcısı.</param>
+      <param name="value">Önbelleğe eklenecek veri.</param>
+      <param name="minutesToCache">İsteğe bağlı.Bir öğenin önbellekte tutulacağı dakika sayısı.Varsayılan değer, 20'dur.</param>
+      <param name="slidingExpiration">İsteğe bağlı.Önbellek öğesi süre dolumunun öğeye her erişimde sıfırlanacağını belirtmek için true veya süre dolumunun öğenin önbelleğe eklendiği zamandan itibaren mutlak süreye dayalı olduğunu belirtmek için false.Varsayılan değer, true.Bu durumda, aynı zamanda <paramref name="minutesToCache" /> parametresi için varsayılan değeri kullanırsanız, önbelleğe alınan öğenin süresi son erişilme zamanından 20 dakika sonra dolar.</param>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="minutesToCache" /> parametresinin değeri sıfırdan düşük veya sıfıra eşittir.</exception>
+      <exception cref="T:System.ArgumentOutOfRangeException">Kayan zaman aşımı etkindir ve <paramref name="minutesToCache" /> değeri bir yıldan büyüktür.</exception>
+    </member>
+    <member name="T:System.Web.Helpers.WebGrid">
+      <summary>Bir HTML tablosu öğesi kullanarak bir web sayfasında veri görüntüler.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.WebGrid.#ctor(System.Collections.Generic.IEnumerable{System.Object},System.Collections.Generic.IEnumerable{System.String},System.String,System.Int32,System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> sınıfının yeni bir örneğini başlatır.</summary>
+      <param name="source">Görüntülenecek veriler.</param>
+      <param name="columnNames">Görüntülenecek veri sütunlarının adlarını içeren bir topluluk.Varsayılan olarak, bu değer, <paramref name="source" /> parametresindeki değerlere göre otomatik olarak doldurulur.</param>
+      <param name="defaultSort">Varsayılan değer olarak ızgarayı sıralamak için kullanılan veri sütununun adı.</param>
+      <param name="rowsPerPage">Sayfalama etkin olduğunda, ızgaranın her bir sayfasında görüntülenen satırların sayısı.Varsayılan değer, 10'dur.</param>
+      <param name="canPage">Sayfalamanın <see cref="T:System.Web.Helpers.WebGrid" /> örneği için etkin olduğunu belirtmek için true; aksi halde false şeklindedir.Varsayılan değer, true.</param>
+      <param name="canSort">Sıralamanın <see cref="T:System.Web.Helpers.WebGrid" /> örneği için etkin olduğunu belirtmek için true; aksi halde false şeklindedir.Varsayılan değer, true.</param>
+      <param name="ajaxUpdateContainerId">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğiyle ilişkili dinamik Ajax güncelleştirmelerini alan bir HTML öğesini web sayfasında işaretlemek için kullanılan HTML id özniteliğinin değeri.</param>
+      <param name="ajaxUpdateCallback">
+        <see cref="P:System.Web.Helpers.WebGrid.AjaxUpdateContainerId" /> özelliğiyle belirtilen HTML öğesi güncelleştirildikten sonra çağrılan JavaScript işlevinin adı.Bir işlevin adı sağlanmazsa, işlev çağrılmaz.Belirtilen işlev yoksa, çağrılması durumunda bir JavaScript hatası oluşur.</param>
+      <param name="fieldNamePrefix">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğiyle ilişkili tüm sorgu alanlarına uygulanan önek.Bu değer, birden çok <see cref="T:System.Web.Helpers.WebGrid" /> örneğini aynı web sayfasında desteklemek için kullanılır.</param>
+      <param name="pageFieldName">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin geçerli sayfasını belirtmek için kullanılan sorgu dizesi alanının adı.</param>
+      <param name="selectionFieldName">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin seçili sayfasını belirtmek için kullanılan sorgu dizesi alanının adı.</param>
+      <param name="sortFieldName">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin kendisine göre sıralandığı veri sütununun adını belirtmek için kullanılan sorgu dizesi alanının adı.</param>
+      <param name="sortDirectionFieldName">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin sıralanma yönünü belirtmek için kullanılan sorgu dizesi alanının adı.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebGrid.AddSorter``2(System.String,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+      <summary>Seçili bir sütun için belirli bir sıralama işlevi ekler.</summary>
+      <returns>Yeni özel sıralayıcının uygulandığı geçerli kılavuz.</returns>
+      <param name="columnName">Sütun adı (sıralama için kullanıldığı şekilde)</param>
+      <param name="keySelector">Kılavuz kaynağındaki her bir öğe için sıralama yapılacak anahtarı seçmek üzere kullanılan işlev.</param>
+      <typeparam name="TElement">Kılavuz kaynağındaki öğelerin türü.</typeparam>
+      <typeparam name="TProperty">Çoğunlukla keySelector işlevinin döndürme türünden alınan sütun türü.</typeparam>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.AjaxUpdateCallback">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğiyle ilişkilendirilen HTML öğesi bir Ajax güncelleştirme isteğine yanıt olarak güncelleştirildikten sonra çağrılacak JavaScript işlevinin adını alır.</summary>
+      <returns>İşlevin adı.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.AjaxUpdateContainerId">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğiyle ilişkili dinamik Ajax güncelleştirmelerini alan bir HTML öğesini web sayfasında işaretleyen HTML id özniteliğinin değerini alır.</summary>
+      <returns>id özniteliğinin değeri.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebGrid.Bind(System.Collections.Generic.IEnumerable{System.Object},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Int32)">
+      <summary>Belirtilen verileri <see cref="T:System.Web.Helpers.WebGrid" /> örneğine bağlar.</summary>
+      <returns>Bağlanan ve doldurulan <see cref="T:System.Web.Helpers.WebGrid" /> örneği.</returns>
+      <param name="source">Görüntülenecek veriler.</param>
+      <param name="columnNames">Bağlanacak veri sütunlarının adlarını içeren bir topluluk.</param>
+      <param name="autoSortAndPage">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin sıralamasını ve sayfalamasını etkinleştirmek için true; aksi halde false.</param>
+      <param name="rowCount">Izgaranın her bir sayfasında görüntülenecek satırların sayısı.</param>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.CanSort">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin sıralamayı destekleyip desteklemediğini belirten bir değer alır.</summary>
+      <returns>Örnek sıralamayı destekliyorsa true; aksi halde false.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebGrid.Column(System.String,System.String,System.Func{System.Object,System.Object},System.String,System.Boolean)">
+      <summary>Yeni bir <see cref="T:System.Web.Helpers.WebGridColumn" /> örneği oluşturur.</summary>
+      <returns>Yeni sütun.</returns>
+      <param name="columnName">
+        <see cref="T:System.Web.Helpers.WebGridColumn" /> örneğiyle ilişkilendirilecek veri sütununun adı.</param>
+      <param name="header">
+        <see cref="T:System.Web.Helpers.WebGridColumn" /> örneğiyle ilişkili HTML tablosu sütununun üstbilgisinde oluşturulan metin.</param>
+      <param name="format">
+        <see cref="T:System.Web.Helpers.WebGridColumn" /> örneğiyle ilişkili veri değerlerini biçimlendirmek için kullanılan işlev.</param>
+      <param name="style">
+        <see cref="T:System.Web.Helpers.WebGridColumn" /> örneğiyle ilişkili HTML tablosu hücrelerinin stilini belirlemek için kullanılan CSS sınıfının adını belirten dize.</param>
+      <param name="canSort">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinde <see cref="T:System.Web.Helpers.WebGridColumn" /> örneğiyle ilişkili veri değerlerine göre sıralamayı etkinleştirmek için true; aksi halde false.Varsayılan değer, true.</param>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.ColumnNames">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğine bağlı her bir veri sütununun adını içeren bir topluluk alır.</summary>
+      <returns>Veri sütunu adları topluluğu.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebGrid.Columns(System.Web.Helpers.WebGridColumn[])">
+      <summary>Belirtilen <see cref="T:System.Web.Helpers.WebGridColumn" /> örneklerini içeren bir dize döndürür.</summary>
+      <returns>Bir sütun dizisi.</returns>
+      <param name="columnSet">Değişken sayıda <see cref="T:System.Web.Helpers.WebGridColumn" /> sütun örneği.</param>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.FieldNamePrefix">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğiyle ilişkili tüm sorgu alanlarına uygulanan öneki alır.</summary>
+      <returns>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin sorgu dizesi alanı öneki.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebGrid.GetContainerUpdateScript(System.String)">
+      <summary>Belirtilen web sayfasının <see cref="T:System.Web.Helpers.WebGrid" /> örneğiyle ilişkili HTML öğesini güncelleştirmek için kullanılabilecek bir JavaScript ifadesi döndürür.</summary>
+      <returns>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğiyle ilişkili bir web sayfasında HTML öğesini güncelleştirmek için kullanılabilecek bir JavaScript ifadesi.</returns>
+      <param name="path">Güncelleştirilmekte olan <see cref="T:System.Web.Helpers.WebGrid" /> örneğini içeren web sayfasının URL'si.URL sorgu dizesi bağımsız değişkenleri içerebilir.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebGrid.GetHtml(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{System.Web.Helpers.WebGridColumn},System.Collections.Generic.IEnumerable{System.String},System.Web.Helpers.WebGridPagerModes,System.String,System.String,System.String,System.String,System.Int32,System.Object)">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğini belirtilen sayfalama seçeneklerini kullanarak oluşturmak için kullanılan HTML biçimlendirmesini döndürür.</summary>
+      <returns>Tam olarak doldurulan <see cref="T:System.Web.Helpers.WebGrid" /> örneğini temsil eden HTML biçimlendirmesi.</returns>
+      <param name="tableStyle">Tüm tablonun stilini belirlemek için kullanılan CSS sınıfının adı.</param>
+      <param name="headerStyle">Tablo üstbilgisinin stilini belirlemek için kullanılan CSS sınıfının adı.</param>
+      <param name="footerStyle">Tablo altbilgisinin stilini belirlemek için kullanılan CSS sınıfının adı.</param>
+      <param name="rowStyle">Her bir tablo satırının stilini belirlemek için kullanılan CSS sınıfının adı.</param>
+      <param name="alternatingRowStyle">Tek sayılı tablo satırlarının stilini belirlemek için kullanılan CSS sınıfının adı.</param>
+      <param name="selectedRowStyle">Seçilen tablo satırının stilini belirlemek için kullanılan CSS sınıfının adı.(Bir kerede yalnızca bir satır seçilebilir.)</param>
+      <param name="caption">Tablo başlığı.</param>
+      <param name="displayHeader">Tablo üstbilgisini görüntülemek için true; aksi halde false.Varsayılan değer, true.</param>
+      <param name="fillEmptyRows">Son sayfayı doldurmak için yeterli veri öğesi olmadığında son sayfaya ek satır eklemek için true; aksi halde false.Varsayılan değer: false.Ek satırlar, <paramref name="emptyRowCellValue" /> parametresi ile belirtilen metin kullanılarak doldurulur.</param>
+      <param name="emptyRowCellValue">Son sayfayı doldurmak için yeterli veri öğesi olmadığında bir sayfaya ek satır eklemek için kullanılan metin.Ek satırları görüntülemek için <paramref name="fillEmptyRows" /> parametresi true olarak ayarlanmalıdır.</param>
+      <param name="columns">Her bir satırın nasıl görüntülendiğini belirten bir <see cref="T:System.Web.Helpers.WebGridColumn" /> topluluğu.Bu, her bir ızgara sütunuyla hangi veri sütununun ilişkilendirileceğini ve her bir ızgara sütununun içerdiği veri değerlerinin nasıl biçimlendirileceğini içerir.</param>
+      <param name="exclusions">Izgara sütunları otomatik olarak doldurduğunda, dışarıda tutulacak veri sütunlarının adlarını içeren bir topluluk.</param>
+      <param name="mode">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin sayfaları arasında hareket etmek için sağlanan yöntemleri belirten numaralandırma değerlerinin bitsel bir birleşimi.</param>
+      <param name="firstText">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin ilk sayfasına bağlantı için kullanılan HTML bağlantı öğesine ilişkin metin.<paramref name="mode" /> parametresinin <see cref="F:System.Web.Helpers.WebGridPagerModes.FirstLast" /> işareti bu sayfa gezinme öğesi görüntülenecek şekilde ayarlanmalıdır.</param>
+      <param name="previousText">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin önceki sayfasına bağlantı için kullanılan HTML bağlantı öğesine ilişkin metin.<paramref name="mode" /> parametresinin <see cref="F:System.Web.Helpers.WebGridPagerModes.NextPrevious" /> işareti bu sayfa gezinme öğesi görüntülenecek şekilde ayarlanmalıdır.</param>
+      <param name="nextText">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin sonraki sayfasına bağlantı için kullanılan HTML bağlantı öğesine ilişkin metin.<paramref name="mode" /> parametresinin <see cref="F:System.Web.Helpers.WebGridPagerModes.NextPrevious" /> işareti bu sayfa gezinme öğesi görüntülenecek şekilde ayarlanmalıdır.</param>
+      <param name="lastText">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin son sayfasına bağlantı için kullanılan HTML bağlantı öğesine ilişkin metin.<paramref name="mode" /> parametresinin <see cref="F:System.Web.Helpers.WebGridPagerModes.FirstLast" /> işareti bu sayfa gezinme öğesi görüntülenecek şekilde ayarlanmalıdır.</param>
+      <param name="numericLinksCount">Yakındaki <see cref="T:System.Web.Helpers.WebGrid" /> sayfalarına sağlanan sayısal sayfa bağlantılarının sayısı.Her bir sayısal sayfa bağlantısının metni sayfa numarasını içerir.<paramref name="mode" /> parametresinin <see cref="F:System.Web.Helpers.WebGridPagerModes.Numeric" /> işareti bu sayfa gezinme öğeleri görüntülenecek şekilde ayarlanmalıdır.</param>
+      <param name="htmlAttributes">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğini temsil eden HTML table öğesini ayarlamak için bir öznitelik (adlar ve değerler) temsil eden bir nesne.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebGrid.GetPageUrl(System.Int32)">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin belirtilen veri sayfasını görüntülemek için kullanılabilecek bir URL döndürür.</summary>
+      <returns>Izgaranın belirtilen veri sayfasını görüntülemek için kullanılabilecek bir URL.</returns>
+      <param name="pageIndex">Görüntülenecek <see cref="T:System.Web.Helpers.WebGrid" /> sayfasının dizini.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebGrid.GetSortUrl(System.String)">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğini belirtilen sütuna göre sıralamak için kullanılabilecek bir URL döndürür.</summary>
+      <returns>Izgarayı sıralamak için kullanılabilecek bir URL.</returns>
+      <param name="column">Sıralamanın yapılacağı veri sütununun adı.</param>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.HasSelection">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğindeki bir satırın seçili olup olmadığını gösteren bir değer alır.</summary>
+      <returns>Bir satır seçili durumdaysa true; aks halde false şeklindedir.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.IsAjaxEnabled">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin görüntüyü yenilemek için Ajax çağrıları kullanıp kullanamayacağını belirten bir değer döndürür.</summary>
+      <returns>Örnek Ajax çağrılarını destekliyorsa true; aksi halde false.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.PageCount">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin içerdiği sayfaların sayısını alır.</summary>
+      <returns>Sayfa sayısı.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.PageFieldName">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin geçerli sayfasını belirtmek için kullanılan sorgu dizesi alanının tam adını alır.</summary>
+      <returns>Izgaranın geçerli sayfasını belirtmek için kullanılan sorgu dizesi alanının tam adı.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.PageIndex">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin geçerli sayfasının dizinini alır veya ayarlar.</summary>
+      <returns>Geçerli sayfanın dizini.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebGrid.Pager(System.Web.Helpers.WebGridPagerModes,System.String,System.String,System.String,System.String,System.Int32)">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneği için belirtilen sayfalama desteğini sağlamak için kullanılan HTML biçimlendirmesini döndürür.</summary>
+      <returns>Izgara için sayfalama desteği sağlayan HTML biçimlendirmesi.</returns>
+      <param name="mode">Izgaranın sayfaları arasında hareket etmek için sağlanan yöntemleri belirten numaralandırma değerlerinin bitsel bir birleşimi.Varsayılan değer, <see cref="F:System.Web.Helpers.WebGridPagerModes.NextPrevious" /> ve <see cref="F:System.Web.Helpers.WebGridPagerModes.Numeric" /> işaretlerinin bitsel VEYA'sıdır.</param>
+      <param name="firstText">Izgaranın ilk sayfasına giden HTML bağlantı öğesine ilişkin metin.</param>
+      <param name="previousText">Izgaranın önceki sayfasına giden HTML bağlantı öğesine ilişkin metin.</param>
+      <param name="nextText">Izgaranın sonraki sayfasına giden HTML bağlantı öğesine ilişkin metin.</param>
+      <param name="lastText">Izgaranın son sayfasına giden HTML bağlantı öğesine ilişkin metin.</param>
+      <param name="numericLinksCount">Görüntülenecek sayısal sayfa bağlantılarının sayısı.Varsayılan değer 5 şeklindedir.</param>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.Rows">
+      <summary>Izgara sıralandıktan sonra <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin geçerli sayfasında bulunan satırları içeren bir listeyi alır.</summary>
+      <returns>Satır sayısı.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.RowsPerPage">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin her bir sayfasında görüntülenen satırların sayısını alır.</summary>
+      <returns>Izgaranın her bir sayfasında görüntülenen satırların sayısı.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.SelectedIndex">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin geçerli sayfasına göre seçilen satırın dizinini alır veya ayarlar.</summary>
+      <returns>Geçerli sayfaya göre seçilen satırın dizini.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.SelectedRow">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin seçili olan satırını alır.</summary>
+      <returns>Seçilen olan satır.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.SelectionFieldName">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin seçili satırını belirtmek için kullanılan sorgu dizesi alanının tam adını alır.</summary>
+      <returns>Seçili ızgara satırını belirtmek için kullanılan sorgu dizesi alanının tam adı.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.SortColumn">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin kendisine göre sıralandığı veri sütunun adını alır veya ayarlar.</summary>
+      <returns>Izgarayı sıralamak için kullanılan veri sütununun adı.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.SortDirection">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin sıralanma yönünü alır veya ayarlar.</summary>
+      <returns>Sıralama yönü.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.SortDirectionFieldName">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin sıralama yönünü belirtmek için kullanılan sorgu dizesi alanının tam adını alır.</summary>
+      <returns>Izgaranın sıralama yönünü belirtmek için kullanılan sorgu dizesi alanının tam adı.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.SortFieldName">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin kendisine göre sıralandığı veri sütununun adını belirtmek için kullanılan sorgu dizesi alanının tam adını alır.</summary>
+      <returns>Izgaranın kendisine göre sıralandığı veri sütununun adını belirtmek için kullanılan sorgu dizesi alanının tam adı.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebGrid.Table(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.Collections.Generic.IEnumerable{System.Web.Helpers.WebGridColumn},System.Collections.Generic.IEnumerable{System.String},System.Func{System.Object,System.Object},System.Object)">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğini oluşturmak için kullanılan HTML biçimlendirmesini döndürür.</summary>
+      <returns>Tam olarak doldurulan <see cref="T:System.Web.Helpers.WebGrid" /> örneğini temsil eden HTML biçimlendirmesi.</returns>
+      <param name="tableStyle">Tüm tablonun stilini belirlemek için kullanılan CSS sınıfının adı.</param>
+      <param name="headerStyle">Tablo üstbilgisinin stilini belirlemek için kullanılan CSS sınıfının adı.</param>
+      <param name="footerStyle">Tablo altbilgisinin stilini belirlemek için kullanılan CSS sınıfının adı.</param>
+      <param name="rowStyle">Her bir tablo satırının stilini belirlemek için kullanılan CSS sınıfının adı.</param>
+      <param name="alternatingRowStyle">Tek sayılı tablo satırlarının stilini belirlemek için kullanılan CSS sınıfının adı.</param>
+      <param name="selectedRowStyle">Seçilen tablo satırının stilini belirlemek için kullanılan CSS sınıfının adı.</param>
+      <param name="caption">Tablo başlığı.</param>
+      <param name="displayHeader">Tablo üstbilgisini görüntülemek için true; aksi halde false.Varsayılan değer, true.</param>
+      <param name="fillEmptyRows">Son sayfayı doldurmak için yeterli veri öğesi olmadığında son sayfaya ek satır eklemek için true; aksi halde false.Varsayılan değer: false.Ek satırlar, <paramref name="emptyRowCellValue" /> parametresi ile belirtilen metin kullanılarak doldurulur.</param>
+      <param name="emptyRowCellValue">Son sayfayı doldurmak için yeterli veri öğesi olmadığında son sayfaya ek satır eklemek için kullanılan metin.Ek satırları görüntülemek için <paramref name="fillEmptyRows" /> parametresi true olarak ayarlanmalıdır.</param>
+      <param name="columns">Her bir satırın nasıl görüntülendiğini belirten bir <see cref="T:System.Web.Helpers.WebGridColumn" /> topluluğu.Bu, her bir ızgara sütunuyla hangi veri sütununun ilişkilendirileceğini ve her bir ızgara sütununun içerdiği veri değerlerinin nasıl biçimlendirileceğini içerir.</param>
+      <param name="exclusions">Izgara sütunları otomatik olarak doldurduğunda, dışarıda tutulacak veri sütunlarının adlarını içeren bir topluluk.</param>
+      <param name="footer">Tablo altbilgisini oluşturmak için kullanılan HTML biçimlendirmesini döndüren bir işlev.</param>
+      <param name="htmlAttributes">
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğini temsil eden HTML table öğesini ayarlamak için bir öznitelik (adlar ve değerler) temsil eden bir nesne.</param>
+    </member>
+    <member name="P:System.Web.Helpers.WebGrid.TotalRowCount">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin içerdiği satırların toplam sayısını alır.</summary>
+      <returns>Izgaradaki satırların toplam sayısı.Bu değer, her sayfadaki tüm satırları içerir, ancak son sayfayı doldurmak için yeterli veri öğesi olmadığında son sayfaya eklenen ek satırları içermez.</returns>
+    </member>
+    <member name="T:System.Web.Helpers.WebGridColumn">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğindeki bir sütunu temsil eder.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.WebGridColumn.#ctor">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGridColumn" /> sınıfının yeni bir örneğini başlatır.</summary>
+    </member>
+    <member name="P:System.Web.Helpers.WebGridColumn.CanSort">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> sütununun sıralanıp sıralanamayacağını gösteren bir değeri alır veya ayarlar.</summary>
+      <returns>Sütunun sıralanabileceğini belirtmek için true, sıralanamayacağını belirtmek içinfalse.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGridColumn.ColumnName">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> sütunuyla ilişkili veri öğesinin adını alır veya ayarlar.</summary>
+      <returns>Veri öğesinin adı.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGridColumn.Format">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> sütunuyla ilişkili veri öğesini biçimlendirmek için kullanılan bir işlevi alır veya ayarlar.</summary>
+      <returns>Sütunla ilişkili veri öğesini biçimlendirmek için kullanılan işlev.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGridColumn.Header">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> sütununun üstbilgisinde işlenen metni alır veya ayarlar.</summary>
+      <returns>Sütun üstbilgisine işlenen metin.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGridColumn.Style">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> sütunuyla ilişkili HTML tablo hücrelerinin bir parçası olarak işlenen CSS sınıfı özniteliği alır veya ayarlar.</summary>
+      <returns>Sütunla ilişkili hücrelere uygulanan CSS sınıf özniteliği.</returns>
+    </member>
+    <member name="T:System.Web.Helpers.WebGridPagerModes">
+      <summary>Bir <see cref="T:System.Web.Helpers.WebGrid" /> örneğinin sayfaları arasında gezinmek için sağlanan yöntemleri açıklayan bayrakları belirtir.Bu sabit listesi, üye değerlerinin bitsel birleşimine imkan tanıyan bir <see cref="T:System.FlagsAttribute" /> öznitelik içerir.</summary>
+    </member>
+    <member name="F:System.Web.Helpers.WebGridPagerModes.All">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> sayfaları arasında gezinmeye yönelik tüm yöntemlerin sağlandığını belirtir.</summary>
+    </member>
+    <member name="F:System.Web.Helpers.WebGridPagerModes.FirstLast">
+      <summary>Doğrudan ilk veya son <see cref="F:System.Web.Helpers.WebGrid" /> sayfasına gitmeye yönelik yöntemlerin sağlandığını belirtir.</summary>
+    </member>
+    <member name="F:System.Web.Helpers.WebGridPagerModes.NextPrevious">
+      <summary>Sonraki veya önceki <see cref="F:System.Web.Helpers.WebGrid" /> sayfasına gitmeye yönelik yöntemlerin sağlandığını belirtir.</summary>
+    </member>
+    <member name="F:System.Web.Helpers.WebGridPagerModes.Numeric">
+      <summary>Sayfa numarası kullanarak yakın bir <see cref="F:System.Web.Helpers.WebGrid" /> sayfasına gitmeye yönelik yöntemlerin sağlandığını belirtir.</summary>
+    </member>
+    <member name="T:System.Web.Helpers.WebGridRow">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGrid" /> örneğindeki bir sırayı temsil eder.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.WebGridRow.#ctor(System.Web.Helpers.WebGrid,System.Object,System.Int32)">
+      <summary>Belirtilen <see cref="T:System.Web.Helpers.WebGrid" /> örneğini, sıra değerini ve dizini kullanarak <see cref="T:System.Web.Helpers.WebGridRow" /> sınıfının yeni bir örneğini başlatır.</summary>
+      <param name="webGrid">Sırayı içeren <see cref="T:System.Web.Helpers.WebGrid" /> örneği.</param>
+      <param name="value">Sıradaki her bir değer için bir özellik üyesi içeren bir nesne.</param>
+      <param name="rowIndex">Sıranın dizini.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebGridRow.GetEnumerator">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGridRow" /> örneğinin değerlerinde yinelemek için kullanılabilecek bir numaralandırıcı döndürür.</summary>
+      <returns>Sıranın değerlerinde yinelemek için kullanılabilecek bir numaralandırıcı.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebGridRow.GetSelectLink(System.String)">
+      <summary>Kullanıcıların sırayı seçmek için kullanabileceği bir HTML öğesi (bir bağlantı) döndürür.</summary>
+      <returns>Kullanıcıların sırayı seçmek için tıklatabileceği bağlantı.</returns>
+      <param name="text">Bağlantı öğesinin iç metni.<paramref name="text" /> boşsa veya null değerine sahipse, "Seç" kullanılır.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebGridRow.GetSelectUrl">
+      <summary>Sırayı seçmek için kullanılabilecek URL'yi döndürür.</summary>
+      <returns>Sıra seçmek için kullanılan URL.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGridRow.Item(System.Int32)">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGridRow" /> örneğinde belirtilen dizindeki değeri döndürür.</summary>
+      <returns>Belirtilen dizindeki değer.</returns>
+      <param name="index">Sıradaki döndürülecek olan değerin sıfır tabanlı dizini.</param>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="index" /> 0'dan küçüktür veya sıradaki değerlerin sayısından büyük veya buna eşittir.</exception>
+    </member>
+    <member name="P:System.Web.Helpers.WebGridRow.Item(System.String)">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGridRow" /> örneğindeki belirtilen ada sahip değeri döndürür.</summary>
+      <returns>Belirtilen değer.</returns>
+      <param name="name">Sıradaki döndürülecek olan değerin adı.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="name" /> is Nothing or empty.</exception>
+      <exception cref="T:System.InvalidOperationException">
+        <paramref name="name" /> var olmayan bir değeri belirtir.</exception>
+    </member>
+    <member name="M:System.Web.Helpers.WebGridRow.System#Collections#IEnumerable#GetEnumerator">
+      <summary>Koleksiyonda yinelemek için kullanılabilecek bir numaralandırıcı döndürür.</summary>
+      <returns>Koleksiyonda yinelemek için kullanılabilecek bir numaralandırıcı.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebGridRow.ToString">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebGridRow" /> örneğinin değerlerini temsil eden bir dize döndürür.</summary>
+      <returns>Sıranın değerlerini temsil eden bir dize.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebGridRow.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)">
+      <summary>Belirtilen bağlayıcı tarafından açıklanan bir <see cref="T:System.Web.Helpers.WebGridRow" /> üyesinin değerini döndürür.</summary>
+      <returns>Öğenin değeri başarılı bir şekilde alındıysa true; alınmadıysa false.</returns>
+      <param name="binder">Bağlı özellik üyesinin alıcısı.</param>
+      <param name="result">Bu yöntem döndürüldüğünde, <paramref name="binder" /> tarafından açıklanan öğenin değerini tutan bir nesne içerir.Bu parametre, başlatmadan iletilir.</param>
+    </member>
+    <member name="P:System.Web.Helpers.WebGridRow.Value">
+      <summary>Sıradaki her bir değer için bir özellik üyesi içeren bir nesneyi alır.</summary>
+      <returns>Sıradaki her bir değeri özellik olarak içeren bir nesne.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebGridRow.WebGrid">
+      <summary>Sıranın ait olduğu <see cref="T:System.Web.Helpers.WebGrid" /> örneğini alır.</summary>
+      <returns>Sırayı içeren <see cref="T:System.Web.Helpers.WebGrid" /> örneği.</returns>
+    </member>
+    <member name="T:System.Web.Helpers.WebImage">
+      <summary>Bir web sayfasında resimler görüntülemenize ve yönetmenize olanak tanıyan bir nesneyi temsil eder.</summary>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.#ctor(System.Byte[])">
+      <summary>Resmi temsil edecek bir bayt dizisi kullanarak <see cref="T:System.Web.Helpers.WebImage" /> sınıfının yeni bir örneğini başlatır.</summary>
+      <param name="content">Resim.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.#ctor(System.IO.Stream)">
+      <summary>Resmi temsil edecek bir akış kullanarak <see cref="T:System.Web.Helpers.WebImage" /> sınıfının yeni bir örneğini başlatır.</summary>
+      <param name="imageStream">Resim.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.#ctor(System.String)">
+      <summary>Resim yerini temsil edecek bir yol kullanarak <see cref="T:System.Web.Helpers.WebImage" /> sınıfının yeni bir örneğini başlatır.</summary>
+      <param name="filePath">Resmi içeren dosyanın yolu.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.AddImageWatermark(System.String,System.Int32,System.Int32,System.String,System.String,System.Int32,System.Int32)">
+      <summary>Filigran resminin yolunu kullanarak bir filigran resmi ekler.</summary>
+      <returns>Filigranlı resim.</returns>
+      <param name="watermarkImageFilePath">Filigran resmini içeren dosyanın yolu.</param>
+      <param name="width">Filigran resminin piksel cinsinden genişliği.</param>
+      <param name="height">Filigran resminin piksel cinsinden yüksekliği.</param>
+      <param name="horizontalAlign">Filigran resmi için yatay hizalama.Değerler "Sol", "Sağ" veya "Orta" olabilir.</param>
+      <param name="verticalAlign">Filigran resmi için düşey hizalama.Değerler "Üst", "Orta" veya "Alt" olabilir.</param>
+      <param name="opacity">Filigran resminin 0 ile 100 arasında bir değer olarak belirtilen saydamlığı.</param>
+      <param name="padding">Filigran resminin çevresindeki dolgunun piksel cinsinden büyüklüğü.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.AddImageWatermark(System.Web.Helpers.WebImage,System.Int32,System.Int32,System.String,System.String,System.Int32,System.Int32)">
+      <summary>Belirtilen resim nesnesini kullanarak bir filigran resmi ekler.</summary>
+      <returns>Filigranlı resim.</returns>
+      <param name="watermarkImage">Bir <see cref="T:System.Web.Helpers.WebImage" /> nesnesi.</param>
+      <param name="width">Filigran resminin piksel cinsinden genişliği.</param>
+      <param name="height">Filigran resminin piksel cinsinden yüksekliği.</param>
+      <param name="horizontalAlign">Filigran resmi için yatay hizalama.Değerler "Sol", "Sağ" veya "Orta" olabilir.</param>
+      <param name="verticalAlign">Filigran resmi için düşey hizalama.Değerler "Üst", "Orta" veya "Alt" olabilir.</param>
+      <param name="opacity">Filigran resminin 0 ile 100 arasında bir değer olarak belirtilen saydamlığı.</param>
+      <param name="padding">Filigran resminin çevresindeki dolgunun piksel cinsinden büyüklüğü.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.AddTextWatermark(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+      <summary>Resme bir filigran metni ekler.</summary>
+      <returns>Filigranlı resim.</returns>
+      <param name="text">Filigran olarak kullanılacak metin.</param>
+      <param name="fontColor">Filigran metninin rengi.</param>
+      <param name="fontSize">Filigran metninin yazıtipi büyüklüğü.</param>
+      <param name="fontStyle">Filigran metninin yazıtipi stili.</param>
+      <param name="fontFamily">Filigran metninin yazıtipi türü.</param>
+      <param name="horizontalAlign">Filigran metni için yatay hizalama.Değerler "Sol", "Sağ" veya "Orta" olabilir.</param>
+      <param name="verticalAlign">Filigran metni için düşey hizalama.Değerler "Üst", "Orta" veya "Alt" olabilir.</param>
+      <param name="opacity">Filigran resminin 0 ile 100 arasında bir değer olarak belirtilen saydamlığı.</param>
+      <param name="padding">Filigran metninin çevresindeki dolgunun piksel cinsinden büyüklüğü.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.Clone">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebImage" /> nesnesini kopyalar.</summary>
+      <returns>Resim.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.Crop(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Bir resmi kırpar.</summary>
+      <returns>Kırpılan resim.</returns>
+      <param name="top">Üstten kaldırılacak piksel sayısı.</param>
+      <param name="left">Üstten kaldırılacak piksel sayısı.</param>
+      <param name="bottom">Alttan kaldırılacak piksel sayısı.</param>
+      <param name="right">Sağdan kaldırılacak piksel sayısı.</param>
+    </member>
+    <member name="P:System.Web.Helpers.WebImage.FileName">
+      <summary>
+        <see cref="T:System.Web.Helpers.WebImage" /> nesnesinin dosya adını alır veya ayarlar.</summary>
+      <returns>Dosya adı.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.FlipHorizontal">
+      <summary>Bir resmi yatay olarak döndürür.</summary>
+      <returns>Döndürülen resim.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.FlipVertical">
+      <summary>Bir resmi düşey olarak döndürür.</summary>
+      <returns>Döndürülen resim.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.GetBytes(System.String)">
+      <summary>Resmi bir bayt dizisi olarak döndürür.</summary>
+      <returns>Resim.</returns>
+      <param name="requestedFormat">
+        <see cref="T:System.Web.Helpers.WebImage" /> nesnesinin <see cref="P:System.Web.Helpers.WebImage.ImageFormat" /> değeri.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.GetImageFromRequest(System.String)">
+      <summary>Tarayıcı kullanılarak karşıya yüklenen bir resim döndürür.</summary>
+      <returns>Resim.</returns>
+      <param name="postedFileName">(İsteğe bağlı) Yayınlanan dosyanın adı.Dosya adı belirtilmezse, karşıya yüklenen ilk dosya döndürülür.</param>
+    </member>
+    <member name="P:System.Web.Helpers.WebImage.Height">
+      <summary>Resmin yüksekliğini piksel cinsinden alır.</summary>
+      <returns>Yükseklik.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebImage.ImageFormat">
+      <summary>Resmin biçimini (örneğin, "jpeg" veya "png") alır.</summary>
+      <returns>Resmin dosya biçimi.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.Resize(System.Int32,System.Int32,System.Boolean,System.Boolean)">
+      <summary>Bir resmi yeniden boyutlandırır.</summary>
+      <returns>Yeniden boyutlandırılan resim.</returns>
+      <param name="width">
+        <see cref="T:System.Web.Helpers.WebImage" /> nesnesinin piksel cinsinden genişliği.</param>
+      <param name="height">
+        <see cref="T:System.Web.Helpers.WebImage" /> nesnesinin piksel cinsinden yüksekliği.</param>
+      <param name="preserveAspectRatio">Resmin oranını korumak için true; aksi halde false şeklindedir.</param>
+      <param name="preventEnlarge">Resmin genişlemesini önlemek için true; aksi halde false şeklindedir.</param>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.RotateLeft">
+      <summary>Bir resmi sola döndürür.</summary>
+      <returns>Döndürülen resim.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.RotateRight">
+      <summary>Bir resmi sağa döndürür.</summary>
+      <returns>Döndürülen resim.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.Save(System.String,System.String,System.Boolean)">
+      <summary>Belirtilen dosya adını kullanarak resmi kaydeder.</summary>
+      <returns>Resim.</returns>
+      <param name="filePath">Resmin kaydedileceği yol.</param>
+      <param name="imageFormat">Resim dosyası kaydedildiğinde kullanılacak "gif" veya "png" gibi biçim.</param>
+      <param name="forceCorrectExtension">
+        <paramref name="imageFormat" /> öğesinde belirtilen doğru dosya adı uzantısının kullanılmasını zorlamak için true; aksi halde false şeklindedir.Dosya türü ve belirtilen dosya adı uzantısı eşleşmiyorsa ve <paramref name="forceCorrectExtension" />true ise, dosya adına doğru uzantı eklenir.Örneğin, Fotoğraf.txt olarak adlandırılan bir PNG dosya adı, Fotoğraf.txt.png. olarak kaydedilir.</param>
+    </member>
+    <member name="P:System.Web.Helpers.WebImage.Width">
+      <summary>Resmin genişliğini piksel cinsinden alır.</summary>
+      <returns>Genişlik.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebImage.Write(System.String)">
+      <summary>Bir resmi tarayıcıda oluşturur.</summary>
+      <returns>Resim.</returns>
+      <param name="requestedFormat">(İsteğe bağlı) Resim yazılırken kullanılacak dosya biçimi.</param>
+    </member>
+    <member name="T:System.Web.Helpers.WebMail">
+      <summary>Bir e-posta oluşturmak ve Basit Posta Aktarma Protokolü'nü (SMTP) kullanarak göndermek için bir yol sağlar.</summary>
+    </member>
+    <member name="P:System.Web.Helpers.WebMail.EnableSsl">
+      <summary>Bir e-posta iletisi gönderildiğinde Güvenli Yuvalar Katmanı'nın (SSL) bağlantıyı şifrelemek için kullanılıp kullanılmayacağını belirten bir değer alır veya ayarlar.</summary>
+      <returns>Bağlantıyı şifrelemek için SSL kullanılıyorsa true; aksi halde false şeklindedir.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebMail.From">
+      <summary>Gönderenin e-posta adresini alır veya yayınlar.</summary>
+      <returns>Gönderenin e-posta adresi.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebMail.Password">
+      <summary>Gönderenin e-posta hesabının parolasını alır veya ayarlar.</summary>
+      <returns>Gönderenin parolası.</returns>
+    </member>
+    <member name="M:System.Web.Helpers.WebMail.Send(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.String,System.String)">
+      <summary>Belirtilen iletiyi teslimat için bir SMTP sunucusuna gönderir.</summary>
+      <param name="to">Alıcının veya alıcıların e-posta adresi.Birden çok alıcıyı noktalı virgül (;) kullanarak ayırın.</param>
+      <param name="subject">E-posta iletisinin konu satırı.</param>
+      <param name="body">E-posta iletisinin gövdesi.<paramref name="isBodyHtml" />doğruysa, gövdedeki HTML biçimlendirme olarak yorumlanır.</param>
+      <param name="from">(İsteğe bağlı) İletiyi gönderenin e-posta adresi veya gönderen belirtilmeyecekse boş.Varsayılan değer: null.</param>
+      <param name="cc">(İsteğe bağlı) İletinin bir kopyasının gönderileceği ek alıcıların e-posta adresleri veya ek alıcı yoksa boş.Birden çok alıcıyı noktalı virgül (;) kullanarak ayırın.Varsayılan değer: null.</param>
+      <param name="filesToAttach">(İsteğe bağlı) E-posta iletisine iliştirilecek dosyaları belirten bir dosya adları topluluğu veya iliştirilecek dosya yoksa, boş.Varsayılan değer: null.</param>
+      <param name="isBodyHtml">(İsteğe bağlı) E-posta gövdesinin HTML biçiminde olduğunu belirtmek için doğru; gövdenin düz metin biçiminde olduğunu belirtmek için false.Varsayılan değer: true.</param>
+      <param name="additionalHeaders">(İsteğe bağlı) Normal SMTP üst bilgilerine eklenecek bir üst bilgi topluluğu bu e-posta iletisine eklenir veya ek üstbilgi göndermemek için boş.Varsayılan değer: null.</param>
+      <param name="bcc">(İsteğe bağlı) İletinin "kör" bir kopyasının gönderileceği ek alıcıların e-posta adresleri veya ek alıcı yoksa boş.Birden çok alıcıyı noktalı virgül (;) kullanarak ayırın.Varsayılan değer: null.</param>
+      <param name="contentEncoding">(İsteğe Bağlı) İletinin gövdesi için kullanılacak kodlama.Olası değerler, <see cref="P:System.Text.Encoding.UTF8" /> gibi, <see cref="T:System.Text.Encoding" /> sınıfa ilişkin özellik değerleridir.Varsayılan değer: null.</param>
+      <param name="headerEncoding">(İsteğe Bağlı) İletinin üstbilgisi için kullanılacak kodlama.Olası değerler, <see cref="P:System.Text.Encoding.UTF8" /> gibi, <see cref="T:System.Text.Encoding" /> sınıfa ilişkin özellik değerleridir.Varsayılan değer: null.</param>
+      <param name="priority">(İsteğe bağlı) İletinin önceliğini belirten bir değer ("Normal", "Düşük", "Yüksek").Varsayılan değer "Normal" şeklindedir.</param>
+      <param name="replyTo">(İsteğe bağlı) Alıcı iletiyi yanıtladığında kullanılacak e-posta adresi.Varsayılan değer, yanıt adresinin Gönderen özelliğindeki değer olduğunu belirten boş değeridir.</param>
+    </member>
+    <member name="P:System.Web.Helpers.WebMail.SmtpPort">
+      <summary>SMTP işlemleri için kullanılan bağlantı noktasını alır veya ayarlar.</summary>
+      <returns>SMTP işlemleri için kullanılan bağlantı noktası.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebMail.SmtpServer">
+      <summary>E-posta iletisini iletmek için kullanılan SMTP sunucusunun adını alır veya ayarlar.</summary>
+      <returns>SMTP sunucusu.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebMail.SmtpUseDefaultCredentials">
+      <summary>İsteklerle birlikte varsayılan kimlik bilgilerinin gönderilip gönderilmeyeceğini belirten bir değer alır veya ayarlar.</summary>
+      <returns>Kimlik bilgileri e-posta iletileriyle gönderilirse true; aksi halde false şeklindedir.</returns>
+    </member>
+    <member name="P:System.Web.Helpers.WebMail.UserName">
+      <summary>E-posta göndermek için kullanılan e-posta hesabının adını alır veya ayarlar.</summary>
+      <returns>Kullanıcı hesabının adı.</returns>
+    </member>
+  </members>
+</doc>

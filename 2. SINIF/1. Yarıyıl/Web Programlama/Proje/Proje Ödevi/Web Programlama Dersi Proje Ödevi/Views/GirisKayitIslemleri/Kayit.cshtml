@@ -1,0 +1,57 @@
+﻿@model Web_Programlama_Dersi_Proje_Ödevi.Models.User
+
+@{
+    ViewBag.Title = Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.KayitOl;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<center style="background-color:darkslategray;margin-top:30">
+
+    <br /><br /><br /><br /><br />
+
+    @using (Html.BeginForm("Kayit", "GirisKayitIslemleri", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal" style="margin-top:13px;">
+           
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group" style="width:40%">
+               @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.KullanıcıAdı
+                <div class="col-md-10" style="width:40%">
+                    @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group" style="width:40%">
+                @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.sifre
+                <div class="col-md-10" style="width:40%">
+                    @Html.EditorFor(model => model.UserPassword, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.UserPassword, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10" style="width:21%">
+                <div class="col-md-10">
+                    @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.sifretekrarı <br />
+                    <input type="password" name="Sifretekrari" class="form-control text-center">
+
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.KayitOl" class="btn btn-info" onclick="location.href='@Url.Action("Kayit", "GirisKayitIslemleri")'" />
+                </div>
+            </div>
+        </div>
+    }
+    <br /><br /><br /><br /><br /><br /><br />
+
+    </center>

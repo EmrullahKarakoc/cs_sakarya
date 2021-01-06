@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Web_Programlama_Dersi_Proje_Ödevi.Models.User>
+
+@{
+    ViewBag.Title = Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Kullanıcılar;
+    if (Session["Isadmin"] == null)
+    {
+        Response.Redirect("~/GirisKayitIslemleri/Giris");
+    }
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br /><br /><br /><br /><br /><br /><br />
+<p>
+    @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Ekle, "Create")
+</p>
+<table class="table" style="margin-top:30px">
+    <tr>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.KullanıcıAdı
+        </th>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.sifre
+        </th>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.admin
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserPassword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsAdmin)
+        </td>
+        <td>
+            @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Düzenle, "Edit", new { id=item.UserId }) |
+            @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Detaylar, "Details", new { id=item.UserId }) |
+            @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Sil, "Delete", new { id=item.UserId })
+        </td>
+    </tr>
+}
+
+</table>
+<br /><br /><br /><br /><br /><br /><br />

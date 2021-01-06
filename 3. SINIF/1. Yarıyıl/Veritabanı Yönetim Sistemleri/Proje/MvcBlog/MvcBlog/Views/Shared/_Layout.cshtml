@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>VTYS PROJE Blog Admin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="~/Content/css/blog-home.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/Gridmvc.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/gridmvc.min.js")" type="text/javascript"> </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Home/Index/">VTYS PROJE Blog Admin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Hakkimizda/">Hakkında</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Iletisim/">İletişim</a>
+                    </li>
+                </ul>
+                   @* @if (Session["uyeid"] != null)
+                     {
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Uye/Index/@Session["uyeid"]">@Session["kullaniciadi"].ToString()</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Uye/Logout/">Çıkış</a>
+                        </li>
+                        if (Convert.ToInt32(Session["yetkiid"]) == 1)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Admin/Index/" target="_blank">Admin Paneli</a>
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Uye/Login/">Giriş</a>
+                        </li>
+                    }
+
+                </ul>
+                 *@
+                <ul class="nav navbar-nav navbar-right top-nav">
+                    @if (Session["uyeid"] != null)
+                    {
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> @Session["kullaniciadi"].ToString() <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/Uye/Index/@Session["uyeid"]">@Session["kullaniciadi"].ToString()<i class=""></i> Profil</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                                </li>
+                                @if (Convert.ToInt32(Session["yetkiid"]) == 1)
+                                {
+                                    <li>
+                                        <a href="/Admin/Index/" target="_blank"><i class="fa fa-fw fa-gear"></i> Admin Paneli</a>
+                                    </li>
+                                }
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="/Uye/Logout/"><i class="fa fa-fw fa-power-off"></i> Çıkış</a>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                    else
+                    {
+                        <li>
+                            <a class="nav-link" href="/Uye/Login/">Giriş</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="/Uye/Create/">Kayıt OL</a>
+                        </li>
+                    }
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+   
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Blog Entries Column -->
+            @*Content*@
+            <div class="col-md-8">
+                @RenderBody()
+            </div>
+
+            <!-- Blog Post -->
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Search Widget -->
+                <div class="card my-4">
+                    @Html.Partial("BlogAraPartial")
+                </div>
+                <!-- Categories Widget -->
+                <div class="card my-4">
+                    @{
+                        Html.RenderAction("KategoriPartial", "Home");
+                    }
+                </div>
+                <div class="card my-4">
+                    @{
+                        Html.RenderAction("PopulerMakaleler", "Home");
+                    }
+                </div>
+                <!-- Side Widget -->
+                <div class="card my-4">
+                    @{
+                        Html.RenderAction("SonYorumlar", "Home");
+                    }
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">VTYS PROJE Blog Admin &copy; @DateTime.Now.Year</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="@Url.Content("~/Scripts/gridmvc.min.js")" type="text/javascript"> </script>
+    <script src="~/Content/vendor/jquery/jquery.js"></script>
+    <script src="~/Content/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

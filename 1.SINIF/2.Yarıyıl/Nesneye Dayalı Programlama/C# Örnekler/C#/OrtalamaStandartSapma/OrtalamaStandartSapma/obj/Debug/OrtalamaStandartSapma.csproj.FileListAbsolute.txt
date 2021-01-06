@@ -1,0 +1,8 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\OrtalamaStandartSapma\OrtalamaStandartSapma\bin\Debug\OrtalamaStandartSapma.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\OrtalamaStandartSapma\OrtalamaStandartSapma\bin\Debug\OrtalamaStandartSapma.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\OrtalamaStandartSapma\OrtalamaStandartSapma\bin\Debug\OrtalamaStandartSapma.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\OrtalamaStandartSapma\OrtalamaStandartSapma\obj\Debug\OrtalamaStandartSapma.Form1.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\OrtalamaStandartSapma\OrtalamaStandartSapma\obj\Debug\OrtalamaStandartSapma.Properties.Resources.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\OrtalamaStandartSapma\OrtalamaStandartSapma\obj\Debug\OrtalamaStandartSapma.csproj.GenerateResource.Cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\OrtalamaStandartSapma\OrtalamaStandartSapma\obj\Debug\OrtalamaStandartSapma.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\OrtalamaStandartSapma\OrtalamaStandartSapma\obj\Debug\OrtalamaStandartSapma.pdb

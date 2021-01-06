@@ -1,0 +1,54 @@
+﻿@using PagedList
+@using PagedList.Mvc
+
+@model IEnumerable<MvcBlog.Models.Makale>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*@Html.Partial("sliderpartial","home")*@
+
+<div class="col-md-8">
+    @foreach (var item in Model)
+    {
+
+        <article class="col-sm-12">
+            <div class="card mb-4">
+                <img class="card-img-top" src="@item.Foto" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title">@item.Baslik</h2>
+                    @if (item.Icerik.Length > 150)
+                {
+                        <p class="card-text">@Html.Raw(item.Icerik.Substring(0, 150))</p>
+                    }
+                    else
+                    {
+                        <p class="card-text">@Html.Raw(item.Icerik)...</p>
+                    }
+
+                    <a href="/Home/MakaleDetayı/@item.Makaleid" class="btn btn-primary">@item.Baslik</a>
+                </div>
+                <div class="card-footer text-muted">@*silinebilir*@
+                    <img class="d-flex mr-3 rounded-circle" src="@item.Uye.Foto" width="50" />
+                    <a href="/Uye/UyeProfil/@item.Uye.Uyeid">@item.Uye.AdSoyad</a>
+                    <p><span class="glyphicon glyphicon-time"></span>@string.Format("{0: MMMMM yyyy}", item.Tarih)</p>
+                    <p><span class="glyphicon glyphicon-tags">Etiket Sayısı:</span>@item.Etikets.Count()</p>
+                </div>
+            </div>
+        </article>
+    }
+    <div class="row">
+        <div class="col-md-8 text-center">
+            <div class="pagedList pagination-lg ">
+                @*@Html.PagedListPager(Model,Page=>Url.Action("Index",new { Page}),PagedListRenderOptions.Classic)*@
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+

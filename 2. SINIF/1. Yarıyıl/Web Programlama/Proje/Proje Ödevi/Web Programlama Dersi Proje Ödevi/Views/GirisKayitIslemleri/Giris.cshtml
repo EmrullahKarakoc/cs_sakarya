@@ -1,0 +1,61 @@
+﻿@model Web_Programlama_Dersi_Proje_Ödevi.Models.User
+
+@{
+    ViewBag.Title = Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.GirisYap;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<body style="background-color:darkslategray">
+    <br><br><br><br><br><br><br>
+
+
+    <center>
+        <img src="https://i.hizliresim.com/ZXJJWa.png" class="img-fluid" alt="Barcelona" style="width:10%; height:150px; border-radius: 100%;">
+
+        @using (Html.BeginForm("Kontrol", "GirisKayitIslemleri", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal" style="width:50%">
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                         @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.KullanıcıAdı
+                    <div class="col-md-10" style="width:50%">
+                        @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group" style="width:50%">
+                    @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.sifre
+                    <div class="col-md-10" style="width:50%">
+                        @Html.EditorFor(model => model.UserPassword, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.UserPassword, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.GirisYap " class="btn btn-success" />
+                    </div>
+                </div>
+            </div>
+        }
+        <br><br><br>
+
+
+
+
+
+
+    </center>
+
+
+   
+</body>
+
+

@@ -1,0 +1,9 @@
+<configuration>
+  <system.web>
+    <pages>
+      <namespaces>
+        <add namespace ="GridMvc" />
+      </namespaces>
+    </pages>  
+  </system.web>
+</configuration>

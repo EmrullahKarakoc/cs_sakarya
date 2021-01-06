@@ -1,0 +1,10 @@
+ana:program1 calistir
+program1:
+	g++ -I "./include" -c ./source/Liste.cpp -o ./lib/Liste.o
+	g++ -I "./include" -c ./source/Ogrenci.cpp -o ./lib/Ogrenci.o
+	g++ -I "./include" -c ./source/Sinif.cpp -o ./lib/Sinif.o
+	g++ -I "./include" -c ./source/Yonetim.cpp -o ./lib/Yonetim.o
+	g++ -I "./include" -c ./source/main.cpp -o ./lib/main.o
+	g++ -I ./lib/Liste.o ./lib/Ogrenci.o ./lib/Sinif.o ./lib/Yonetim.o ./lib/main.o -o ./bin/Test
+calistir:
+	./bin/Test

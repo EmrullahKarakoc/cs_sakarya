@@ -1,0 +1,53 @@
+﻿@model Web_Programlama_Dersi_Proje_Ödevi.Models.User
+
+@{
+    ViewBag.Title = Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.profil;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Profil</h2>
+
+<br /><br /><br /><br /><br /><br />
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.AlimTarihi
+        </th>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.TeslimTarihi
+        </th>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.AracModel
+        </th>
+        <th>
+            @Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.KullanıcıAdı
+        </th>
+    </tr>
+
+@foreach (var item in Model.Sepet) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SepetAlimTarihi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SepetTeslimTarihi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Arac.AracModel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+        <td>
+            @Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.adminsepettencikar, "Delete","Sepets", new { id = item.SepetID },null)
+        </td>
+    </tr>
+}
+
+</table>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br />
+
+

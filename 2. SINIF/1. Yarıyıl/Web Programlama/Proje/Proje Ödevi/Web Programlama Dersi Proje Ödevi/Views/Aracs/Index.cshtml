@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Web_Programlama_Dersi_Proje_Ödevi.Models.Arac>
+
+@{
+    ViewBag.Title = Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Araclar;
+    if (Session["Isadmin"] == null) { Response.Redirect("~/GirisKayitIslemleri/Giris"); }
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br /><br /><br /><br /><br /><br /><br />
+
+<p>@Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Kaydet, "Create")</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AracModel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AracFiyat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AracTuru)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracModel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracFiyat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AracTuru)
+        </td>
+        <td>
+            @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Düzenle, "Edit", new { id=item.AracId }) |
+            @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Detaylar, "Details", new { id=item.AracId }) |
+            @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Sil, "Delete", new { id=item.AracId })
+        </td>
+    </tr>
+}
+
+</table>
+<br /><br /><br /><br /><br /><br /><br /><br />

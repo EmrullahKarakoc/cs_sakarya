@@ -1,0 +1,18 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\bin\Debug\SınavTakvimi-DateTimePicker.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\bin\Debug\SınavTakvimi-DateTimePicker.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\bin\Debug\SınavTakvimi-DateTimePicker.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi_DateTimePicker.Form1.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi_DateTimePicker.Properties.Resources.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi-DateTimePicker.csproj.GenerateResource.Cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi-DateTimePicker.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi-DateTimePicker.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi-DateTimePicker.csprojResolveAssemblyReference.cache
+E:\Masaüstü\C#\C#\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\bin\Debug\SınavTakvimi-DateTimePicker.exe.config
+E:\Masaüstü\C#\C#\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\bin\Debug\SınavTakvimi-DateTimePicker.exe
+E:\Masaüstü\C#\C#\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\bin\Debug\SınavTakvimi-DateTimePicker.pdb
+E:\Masaüstü\C#\C#\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi-DateTimePicker.csprojResolveAssemblyReference.cache
+E:\Masaüstü\C#\C#\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi_DateTimePicker.Form1.resources
+E:\Masaüstü\C#\C#\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi_DateTimePicker.Properties.Resources.resources
+E:\Masaüstü\C#\C#\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi-DateTimePicker.csproj.GenerateResource.Cache
+E:\Masaüstü\C#\C#\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi-DateTimePicker.exe
+E:\Masaüstü\C#\C#\SınavTakvimi-DateTimePicker\SınavTakvimi-DateTimePicker\obj\Debug\SınavTakvimi-DateTimePicker.pdb

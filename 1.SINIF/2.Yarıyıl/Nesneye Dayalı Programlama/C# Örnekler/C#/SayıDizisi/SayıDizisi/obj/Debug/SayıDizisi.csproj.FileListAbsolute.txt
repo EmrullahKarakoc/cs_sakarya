@@ -1,0 +1,6 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\SayıDizisi\SayıDizisi\bin\Debug\SayıDizisi.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\SayıDizisi\SayıDizisi\bin\Debug\SayıDizisi.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\SayıDizisi\SayıDizisi\bin\Debug\SayıDizisi.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\SayıDizisi\SayıDizisi\obj\Debug\SayıDizisi.csprojResolveAssemblyReference.cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\SayıDizisi\SayıDizisi\obj\Debug\SayıDizisi.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\SayıDizisi\SayıDizisi\obj\Debug\SayıDizisi.pdb

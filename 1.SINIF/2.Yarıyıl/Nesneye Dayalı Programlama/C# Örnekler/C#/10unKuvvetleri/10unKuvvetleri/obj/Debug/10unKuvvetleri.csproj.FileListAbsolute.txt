@@ -1,0 +1,6 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\10unKuvvetleri\10unKuvvetleri\bin\Debug\10unKuvvetleri.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\10unKuvvetleri\10unKuvvetleri\bin\Debug\10unKuvvetleri.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\10unKuvvetleri\10unKuvvetleri\bin\Debug\10unKuvvetleri.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\10unKuvvetleri\10unKuvvetleri\obj\Debug\10unKuvvetleri.csprojResolveAssemblyReference.cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\10unKuvvetleri\10unKuvvetleri\obj\Debug\10unKuvvetleri.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\10unKuvvetleri\10unKuvvetleri\obj\Debug\10unKuvvetleri.pdb

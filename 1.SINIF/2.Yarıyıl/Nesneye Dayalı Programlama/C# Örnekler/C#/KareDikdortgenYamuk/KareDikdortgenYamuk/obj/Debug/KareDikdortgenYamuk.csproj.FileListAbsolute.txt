@@ -1,0 +1,6 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\KareDikdortgenYamuk\KareDikdortgenYamuk\bin\Debug\KareDikdortgenYamuk.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\KareDikdortgenYamuk\KareDikdortgenYamuk\bin\Debug\KareDikdortgenYamuk.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\KareDikdortgenYamuk\KareDikdortgenYamuk\bin\Debug\KareDikdortgenYamuk.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\KareDikdortgenYamuk\KareDikdortgenYamuk\obj\Debug\KareDikdortgenYamuk.csprojResolveAssemblyReference.cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\KareDikdortgenYamuk\KareDikdortgenYamuk\obj\Debug\KareDikdortgenYamuk.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\KareDikdortgenYamuk\KareDikdortgenYamuk\obj\Debug\KareDikdortgenYamuk.pdb

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<MvcBlog.Models.Makale>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Makaleler</h2>
+
+<p>
+    @Html.ActionLink("Yeni Makale", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Kategori.KategoriAdi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Baslik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Icerik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Foto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tarih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Uyeid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Okuma)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kategori.KategoriAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Baslik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Icerik)
+        </td>
+        <td>
+           <img width="75" img src="@item.Foto"/>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tarih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Uyeid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Okuma)
+        </td>
+        <td>
+            @Html.ActionLink("Düzenle", "Edit", new { id=item.Makaleid }) |
+            @Html.ActionLink("Detay", "Details", new { id=item.Makaleid }) |
+            @Html.ActionLink("Sil", "Delete", new { id=item.Makaleid })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>System.Web.WebPages.Razor</name>
+  </assembly>
+  <members>
+    <member name="T:System.Web.WebPages.Razor.CompilingPathEventArgs">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Olay verilerini içeren derleme yolu için temel sınıfı temsil eder.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.CompilingPathEventArgs.#ctor(System.String,System.Web.WebPages.Razor.WebPageRazorHost)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.<see cref="T:System.Web.WebPages.Razor.CompilingPathEventArgs" /> sınıfının yeni bir örneğini başlatır.</summary>
+      <param name="virtualPath">Sanal yol dizesi.</param>
+      <param name="host">Web sayfası razoru için ana bilgisayar.</param>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.CompilingPathEventArgs.Host">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Web sayfası razoru için ana bilgisayarı alır veya ayarlar.</summary>
+      <returns>Web sayfası razoru için ana bilgisayar.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.CompilingPathEventArgs.VirtualPath">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Web sayfasının sanal yolunu alır.</summary>
+      <returns>Web sayfasının sanal yolu.</returns>
+    </member>
+    <member name="T:System.Web.WebPages.Razor.PreApplicationStartCode">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.PreApplicationStartCode.Start">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.</summary>
+    </member>
+    <member name="T:System.Web.WebPages.Razor.RazorBuildProvider">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Razor için bir oluşturma sağlayıcısını temsil eder.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.RazorBuildProvider.#ctor">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.<see cref="T:System.Web.WebPages.Razor.RazorBuildProvider" /> sınıfının yeni bir örneğini başlatır.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.RazorBuildProvider.AddVirtualPathDependency(System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Koleksiyona bir sanal yol bağımlılığı ekler.</summary>
+      <param name="dependency">Eklenecek sanal yol bağımlılığı.</param>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.RazorBuildProvider.AssemblyBuilder">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Razor ortamı için derleme oluşturucuyu alır.</summary>
+      <returns>Derleme oluşturucu.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.RazorBuildProvider.CodeCompilerType">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Razor ortamı için derleyici ayarlarını alır.</summary>
+    </member>
+    <member name="E:System.Web.WebPages.Razor.RazorBuildProvider.CodeGenerationCompleted">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Kod oluşturma tamamlandığında gerçekleşir.</summary>
+    </member>
+    <member name="E:System.Web.WebPages.Razor.RazorBuildProvider.CodeGenerationStarted">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Kod oluşturma başlatıldığında gerçekleşir.</summary>
+    </member>
+    <member name="E:System.Web.WebPages.Razor.RazorBuildProvider.CompilingPath">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Yeni bir sanal yol derlenirken gerçekleşir.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.RazorBuildProvider.CreateHost">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Web yapılandırmasında bir Razor alt yapısı ana bilgisayar örneği temeli oluşturur.</summary>
+      <returns>Bir Razor alt yapısı ana bilgisayar örneği.</returns>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.RazorBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Belirtilen derleme oluşturucusuyla kodu oluşturur.</summary>
+      <param name="assemblyBuilder">Derleme oluşturucu.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.RazorBuildProvider.GetGeneratedType(System.CodeDom.Compiler.CompilerResults)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Oluşturulan kodun türünü alır.</summary>
+      <returns>Oluşturulan kodun türü.</returns>
+      <param name="results">Kod derlemenin sonuçları.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.RazorBuildProvider.GetHostFromConfig">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Web yapılandırmasını temel alan bir Razor alt yapısı ana bilgisayar örneği oluşturur.</summary>
+      <returns>Razor alt yapısı ana bilgisayar örneği.</returns>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.RazorBuildProvider.InternalOpenReader">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Bir iç metin okuyucusunu açar.</summary>
+      <returns>İç metin okuyucusu.</returns>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.RazorBuildProvider.OnBeforeCompilePath(System.Web.WebPages.Razor.CompilingPathEventArgs)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.CompilingPath olayını başlatır.</summary>
+      <param name="args">CompilingPath olayı için belirtilen veriler.</param>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.RazorBuildProvider.VirtualPath">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Kaynak kodun sanal yolunu alır.</summary>
+      <returns>Kaynak kodun sanal yolu.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.RazorBuildProvider.VirtualPathDependencies">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Bağımlılıklar için sanal yol koleksiyonunu alır.</summary>
+      <returns>Bağımlılıklar için sanal yol koleksiyonu.</returns>
+    </member>
+    <member name="T:System.Web.WebPages.Razor.WebCodeRazorHost">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Web sayfaları için bir web kodu razor ana bilgisayarını temsil eder.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebCodeRazorHost.#ctor(System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.<see cref="T:System.Web.WebPages.Razor.WebCodeRazorHost" /> sınıfının yeni bir örneğini başlatır.</summary>
+      <param name="virtualPath">Sanal yol.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebCodeRazorHost.#ctor(System.String,System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.<see cref="T:System.Web.WebPages.Razor.WebCodeRazorHost" /> sınıfının yeni bir örneğini başlatır.</summary>
+      <param name="virtualPath">Sanal yol.</param>
+      <param name="physicalPath">Fiziksel yol.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebCodeRazorHost.GetClassName(System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Bu örneğin sınıf adını döndürür.</summary>
+      <returns>Bu örneğin sınıf adı.</returns>
+      <param name="virtualPath">Sanal yol.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebCodeRazorHost.PostProcessGeneratedCode(System.Web.Razor.Generator.CodeGeneratorContext)">
+      <summary>Web kodu razor ana bilgisayarı için bir işlem sonrası kodu oluşturur.</summary>
+      <param name="context">Oluşturucu kodu bağlamı.</param>
+    </member>
+    <member name="T:System.Web.WebPages.Razor.WebPageRazorHost">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Bir web sayfasındaki razor ana bilgisayarlarını temsil eder.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebPageRazorHost.#ctor(System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.<see cref="T:System.Web.WebPages.Razor.WebPageRazorHost" /> sınıfının yeni bir örneğini belirtilen sanal dosya yoluyla başlatır.</summary>
+      <param name="virtualPath">Sanal dosya yolu.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebPageRazorHost.#ctor(System.String,System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.<see cref="T:System.Web.WebPages.Razor.WebPageRazorHost" /> sınıfının yeni bir örneğini belirtilen sanal ve fiziksel dosya yoluyla başlatır.</summary>
+      <param name="virtualPath">Sanal dosya yolu.</param>
+      <param name="physicalPath">Fiziksel dosya yolu.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebPageRazorHost.AddGlobalImport(System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Web sayfasına genel bir içe aktarım ekler.</summary>
+      <param name="ns">Bildirim hizmeti adı.</param>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.WebPageRazorHost.CodeLanguage">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.<see cref="T:System.Web.Razor.RazorCodeLanguage" /> öğesini alır.</summary>
+      <returns>
+        <see cref="T:System.Web.Razor.RazorCodeLanguage" />.</returns>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebPageRazorHost.CreateMarkupParser">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Bir işaretleme ayrıştırıcısı oluşturur.</summary>
+      <returns>İşaretleme ayrıştırıcısı.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.WebPageRazorHost.DefaultBaseClass">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.DefaultBaseClass için bir değer alır veya ayarlar.</summary>
+      <returns>DefaultBaseClass değeri.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.WebPageRazorHost.DefaultClassName">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Varsayılan sınıfın adını alır veya ayarlar.</summary>
+      <returns>Varsayılan sınıfın adı.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.WebPageRazorHost.DefaultDebugCompilation">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Hata ayıklama derlemesinin varsayılana ayarlanıp ayarlanmadığını gösteren bir değer alır veya ayarlar.</summary>
+      <returns>Hata ayıklama derlemesi varsayılana ayarlandıysa true, aksi takdirde false.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.WebPageRazorHost.DefaultPageBaseClass">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Varsayılan sayfanın temel sınıfını alır veya ayarlar.</summary>
+      <returns>Varsayılan sayfanın temel sınıfı.</returns>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebPageRazorHost.GetClassName(System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Belirtilen web sayfasının ait olduğu sınıfın adını alır.</summary>
+      <returns>Belirtilen web sayfasının ait olduğu sınıfın adı.</returns>
+      <param name="virtualPath">Sanal dosya yolu.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebPageRazorHost.GetCodeLanguage">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Web sayfasında belirtilen kod dilini alır.</summary>
+      <returns>Web sayfasında belirtilen kod dili.</returns>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebPageRazorHost.GetGlobalImports">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Web sayfasının genel içe aktarımlarını alır.</summary>
+      <returns>Web sayfasının genel içe aktarımları.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.WebPageRazorHost.InstrumentedSourceFilePath">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Enstrümental kaynağın dosya yolunu alır veya ayarlar.</summary>
+      <returns>Enstrümental kaynağın dosya yolu.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.WebPageRazorHost.IsSpecialPage">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Web sayfasının özel bir sayfa olup olmadığını belirten bir değeri alır.</summary>
+      <returns>Web sayfası özel bir sayfa ise true, aksi takdirde false.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.WebPageRazorHost.PhysicalPath">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Razor ana bilgisayarının fiziksel dosya sistemi yolunu alır.</summary>
+      <returns>Razor ana bilgisayarının fiziksel dosya sistemi yolu.</returns>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebPageRazorHost.PostProcessGeneratedCode(System.Web.Razor.Generator.CodeGeneratorContext)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.İşlemden sonra oluşturulan kodu alır.</summary>
+      <param name="context">
+        <see cref="T:System.Web.Razor.Generator.CodeGeneratorContext" />.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebPageRazorHost.RegisterSpecialFile(System.String,System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Özel dosyayı belirtilen dosya adı ve temel tür adıyla kaydeder.</summary>
+      <param name="fileName">Dosya adı.</param>
+      <param name="baseTypeName">Temel tür adı.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebPageRazorHost.RegisterSpecialFile(System.String,System.Type)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Özel dosyayı belirtilen dosya adı ve temel türle kaydeder.</summary>
+      <param name="fileName">Dosya adı.</param>
+      <param name="baseType">Temel dosyanın türü.</param>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.WebPageRazorHost.VirtualPath">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Sanal dosya yolunu alır.</summary>
+      <returns>Sanal dosya yolu.</returns>
+    </member>
+    <member name="T:System.Web.WebPages.Razor.WebRazorHostFactory">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Ana bilgisayar dosyalarının örneklerini oluşturur.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebRazorHostFactory.#ctor">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.<see cref="T:System.Web.WebPages.Razor.WebRazorHostFactory" /> sınıfının yeni bir örneğini başlatır.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebRazorHostFactory.ApplyConfigurationToHost(System.Web.WebPages.Razor.Configuration.RazorPagesSection,System.Web.WebPages.Razor.WebPageRazorHost)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Yapılandırma dosyasından hizmet açıklaması bilgilerini yükler ve ana bilgisayara uygular.</summary>
+      <param name="config">Yapılandırma.</param>
+      <param name="host">Web sayfası razor ana bilgisayarı.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebRazorHostFactory.CreateDefaultHost(System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Belirtilen sanal yolla varsayılan bir ana bilgisayar oluşturur.</summary>
+      <returns>Varsayılan bir ana bilgisayar.</returns>
+      <param name="virtualPath">Dosyanın sanal yolu.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebRazorHostFactory.CreateDefaultHost(System.String,System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Belirtilen sanal ve fiziksel yolla varsayılan bir ana bilgisayar oluşturur.</summary>
+      <returns>Varsayılan bir ana bilgisayar.</returns>
+      <param name="virtualPath">Dosyanın sanal yolu.</param>
+      <param name="physicalPath">Fiziksel dosya sistemi yolu.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebRazorHostFactory.CreateHost(System.String,System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Razor ana bilgisayarı oluşturur.</summary>
+      <returns>Razor ana bilgisayarı.</returns>
+      <param name="virtualPath">Hedef dosya için sanal yol.</param>
+      <param name="physicalPath">Hedef dosya için fiziksel yol.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebRazorHostFactory.CreateHostFromConfig(System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Yapılandırmadan bir ana bilgisayar oluşturur.</summary>
+      <returns>Yapılandırmadan ana bilgisayar.</returns>
+      <param name="virtualPath">Hedef dosya için sanal yol.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebRazorHostFactory.CreateHostFromConfig(System.String,System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Yapılandırmadan bir ana bilgisayar oluşturur.</summary>
+      <returns>Yapılandırmadan ana bilgisayar.</returns>
+      <param name="virtualPath">Dosyanın sanal yolu.</param>
+      <param name="physicalPath">Fiziksel dosya sistemi yolu.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebRazorHostFactory.CreateHostFromConfig(System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup,System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Yapılandırmadan bir ana bilgisayar oluşturur.</summary>
+      <returns>Yapılandırmadan ana bilgisayar.</returns>
+      <param name="config">Yapılandırma.</param>
+      <param name="virtualPath">Dosyanın sanal yolu.</param>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.WebRazorHostFactory.CreateHostFromConfig(System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup,System.String,System.String)">
+      <summary>Bu tür/üye .NET Framework altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.Yapılandırmadan bir ana bilgisayar oluşturur.</summary>
+      <returns>Yapılandırmadan ana bilgisayar.</returns>
+      <param name="config">Yapılandırma.</param>
+      <param name="virtualPath">Dosyanın sanal yolu.</param>
+      <param name="physicalPath">Fiziksel dosya sistemi yolu.</param>
+    </member>
+    <member name="T:System.Web.WebPages.Razor.Configuration.HostSection">
+      <summary>host yapılandırma bölümü için yapılandırma sistem desteği sağlar.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.Configuration.HostSection.#ctor">
+      <summary>
+        <see cref="T:System.Web.WebPages.Razor.Configuration.HostSection" /> sınıfının yeni bir örneğini başlatır.</summary>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.Configuration.HostSection.FactoryType">
+      <summary>Ana bilgisayar üretecini alır veya ayarlar.</summary>
+      <returns>Ana bilgisayar üreteci.</returns>
+    </member>
+    <member name="F:System.Web.WebPages.Razor.Configuration.HostSection.SectionName">
+      <summary>Razor ana bilgisayar ortamının yapılandırma bölümünün adını temsil eder.</summary>
+    </member>
+    <member name="T:System.Web.WebPages.Razor.Configuration.RazorPagesSection">
+      <summary>Pages yapılandırma bölümü için yapılandırma sistem desteği sağlar.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.Configuration.RazorPagesSection.#ctor">
+      <summary>
+        <see cref="T:System.Web.WebPages.Razor.Configuration.RazorPagesSection" /> sınıfının yeni bir örneğini başlatır.</summary>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.Configuration.RazorPagesSection.Namespaces">
+      <summary>Geçerli uygulamadaki Web Pages sayfalarına eklenecek ad alanı koleksiyonunu alır veya ayarlar.</summary>
+      <returns>Ad alanı koleksiyonu.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.Configuration.RazorPagesSection.PageBaseType">
+      <summary>Sayfa temel tür sınıfının adını alır veya ayarlar.</summary>
+      <returns>Sayfa temel tür sınıfının adı.</returns>
+    </member>
+    <member name="F:System.Web.WebPages.Razor.Configuration.RazorPagesSection.SectionName">
+      <summary>Razor sayfalarının yapılandırma bölümünün adını temsil eder.</summary>
+    </member>
+    <member name="T:System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup">
+      <summary>system.web.webPages.razor yapılandırma bölümü için yapılandırma sistem desteği sağlar.</summary>
+    </member>
+    <member name="M:System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup.#ctor">
+      <summary>
+        <see cref="T:System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup" /> sınıfının yeni bir örneğini başlatır.</summary>
+    </member>
+    <member name="F:System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup.GroupName">
+      <summary>Razor Web bölümünün yapılandırma bölümünün adını temsil eder.Statik ve salt okunur "system.web.webPages.razor" dizesini içerir.</summary>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup.Host">
+      <summary>system.web.webPages.razor bölüm grubu için host değerini alır veya ayarlar.</summary>
+      <returns>Host değeri.</returns>
+    </member>
+    <member name="P:System.Web.WebPages.Razor.Configuration.RazorWebSectionGroup.Pages">
+      <summary>system.web.webPages.razor bölümü için pages öğesinin değerini alır veya ayarlar.</summary>
+      <returns>pages öğesinin değeri.</returns>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,49 @@
+﻿@model Web_Programlama_Dersi_Proje_Ödevi.Models.User
+
+@{
+    ViewBag.Title = Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Sil;
+    if (Session["Isadmin"] == null) { Response.Redirect("~/GirisKayitIslemleri/Giris"); }
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+<center>
+
+    <dl class="dl-horizontal" style="margin-top:20px">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAdmin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsAdmin)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Sil" class="btn btn-danger" /> |
+            @Html.ActionLink(@Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.GeriDön, "Index")
+        </div>
+    }
+</center>
+<br /><br /><br /><br /><br /><br /><br />

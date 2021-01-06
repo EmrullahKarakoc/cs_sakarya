@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="codepixer">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+
+    <title>@ViewBag.Title</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!-- ========= CSS  ========= -->
+    <link rel="stylesheet" href="~/Dosyalar/css/linearicons.css">
+    <link rel="stylesheet" href="~/Dosyalar/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Dosyalar/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Dosyalar/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/Dosyalar/css/nice-select.css">
+    <link rel="stylesheet" href="~/Dosyalar/css/animate.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="~/Dosyalar/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/Dosyalar/css/main.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header id="header" id="home" style="background-color:black;">
+ <div class="container">
+     <div class="row align-items-center justify-content-between d-flex">
+
+         <div id="logo">
+             <img src="https://i.hizliresim.com/V9L45r.png" />
+         </div>
+
+
+         <nav id="nav-menu-container">
+             <ul class="nav-menu">
+
+                 @if (Session["IsAdmin"] != null)
+                 {
+                     <li>@Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.AraclariGoruntule, "Index", "Aracs")</li>
+                     <li>@Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.KullanicilariGörüntüle, "Index", "Users")</li>
+                 }
+                 <li>@Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.AnaSayfa, "Index", "Home")</li>
+                 <li>@Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Hakkimizda, "Hakkimizda", "Home")</li>
+                 <li>@Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Araclar, "Araclar", "Aracs")</li>
+                 <li>@Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.Iletisim, "Iletisim", "Home")</li>
+                 @if (Session["UserName"] == null)
+                 {
+                    <li>@Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.GirisYap, "Giris", "GirisKayitIslemleri")</li>
+                    <li>@Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.KayitOl, "Kayit", "GirisKayitIslemleri")</li>
+                 }
+
+                 @if (Session["UserName"] != null)
+                 {
+                    <li>@Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext .CikisYap+ "(  "+Session["UserName"] + "  )  ", "Cikis", "GirisKayitIslemleri")</li>
+                    <li>@Html.ActionLink(Web_Programlama_Dersi_Proje_Ödevi.Resources.hometext.SepetiListele, "Index", "Sepets")</li>
+                 }
+                 <li><a href="@Url.Action("Sec","Language",new { LanguageAbbrevation  = "tr"},null)"><img src="https://i.hizliresim.com/QLYXmr.png"></a></li>
+                 <li><a href="@Url.Action("Sec","Language",new { LanguageAbbrevation = "en"},null)"><img src="https://i.hizliresim.com/nQmPn1.png"></a></li>
+             </ul>
+         </nav>
+     </div>
+ </div>
+</header>
+
+    @RenderBody()
+
+
+ <footer class="footer-area section-gap" style="background-color:black; color:gray">
+   <div class="container">
+     <div class="row">
+         <p class="mt-50 mx-auto footer-text col-lg-12">
+              &copy; @DateTime.Now.Year made with Emrullah Karakoç - Ahmet Can Örten
+             <br />
+         </p>
+     </div>
+   </div>
+ </footer>
+
+</body>
+</html>

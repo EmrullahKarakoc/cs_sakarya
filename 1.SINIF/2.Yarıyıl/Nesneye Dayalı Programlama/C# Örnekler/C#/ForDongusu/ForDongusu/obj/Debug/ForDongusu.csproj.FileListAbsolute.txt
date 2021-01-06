@@ -1,0 +1,5 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\ForDongusu\ForDongusu\bin\Debug\ForDongusu.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\ForDongusu\ForDongusu\bin\Debug\ForDongusu.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\ForDongusu\ForDongusu\bin\Debug\ForDongusu.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\ForDongusu\ForDongusu\obj\Debug\ForDongusu.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\ForDongusu\ForDongusu\obj\Debug\ForDongusu.pdb

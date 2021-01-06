@@ -1,0 +1,58 @@
+﻿@model IEnumerable<MvcBlog.Models.Uye>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Üyeler</h2>
+
+<p>
+    @Html.ActionLink("Yeni Üye", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Yetki.Yetki1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KullaniciAdi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sifre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdSoyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Foto)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Yetki.Yetki1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KullaniciAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sifre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdSoyad)
+        </td>
+        <td>
+            <img class="d-flex mr-3 rounded-circle" width="50" src="@item.Foto" />
+        </td>
+        <td>
+            @Html.ActionLink("Düzenle", "Edit", new { id=item.Uyeid }) |
+            @Html.ActionLink("Detay", "Details", new { id=item.Uyeid }) |
+            @Html.ActionLink("Sil", "Delete", new { id=item.Uyeid })
+        </td>
+    </tr>
+}
+
+</table>

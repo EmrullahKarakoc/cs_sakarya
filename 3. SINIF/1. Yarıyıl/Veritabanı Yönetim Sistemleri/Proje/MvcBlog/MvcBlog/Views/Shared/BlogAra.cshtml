@@ -1,0 +1,64 @@
+﻿@model IEnumerable<MvcBlog.Models.Makale>
+
+@{
+    ViewBag.Title = "BlogAra";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-8">
+    <h5 class="card-header">Aradığınız İçerikteki Makaleler</h5>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Kategori.KategoriAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Uye.KullaniciAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Baslik)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Foto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tarih)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Okuma)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kategori.KategoriAdi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Uye.KullaniciAdi)
+                </td>
+                <td>
+                    <a href="/Home/MakaleDetay/@item.Makaleid">@Html.DisplayFor(modelItem => item.Baslik)</a>
+                </td>
+
+                <td>
+                    <img class="img-rounded img-responsive" width="75" src="@item.Foto" alt="@item.Baslik" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tarih)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Okuma)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Makaleid }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Makaleid }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Makaleid })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

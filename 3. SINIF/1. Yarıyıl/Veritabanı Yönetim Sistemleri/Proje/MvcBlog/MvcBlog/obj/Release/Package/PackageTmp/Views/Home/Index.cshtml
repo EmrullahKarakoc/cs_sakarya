@@ -1,0 +1,37 @@
+﻿@model IEnumerable<MvcBlog.Models.Makale>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="col-md-8">
+    @foreach (var item in Model)
+    {
+
+        <article class="col-sm-12">
+            <div class="card mb-4">
+                <img class="card-img-top" src="@item.Foto" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title">@item.Baslik</h2>
+                    @if (item.Icerik.Length > 150)
+                {
+                        <p class="card-text">@Html.Raw(item.Icerik.Substring(0, 150))</p>
+                    }
+                    else
+                    {
+                        <p class="card-text">@Html.Raw(item.Icerik)...</p>
+                    }
+
+                    <a href="/Home/MakaleDetayı/@item.Makaleid" class="btn btn-primary">@item.Baslik</a>
+                </div>
+                <div class="card-footer text-muted">@*silinebilir*@
+                    <img class="img-circle img-responsive" src="@item.Uye.Foto" width="125" />
+                    <a href="/Uye/Index/@item.Uye.Uyeid">@item.Uye.AdSoyad</a>
+                    <p><span class="glyphicon glyphicon-time"></span>@string.Format("{0: MMMMM yyyy}", item.Tarih)</p>
+                    <p><span class="glyphicon glyphicon-tags">Etiket Sayısı:</span>@item.Etikets.Count()</p>
+                </div>
+            </div>
+        </article>
+    }
+</div>

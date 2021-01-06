@@ -1,0 +1,8 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\KitapSiparisListesi\KitapSiparisListesi\bin\Debug\KitapSiparisListesi.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\KitapSiparisListesi\KitapSiparisListesi\bin\Debug\KitapSiparisListesi.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\KitapSiparisListesi\KitapSiparisListesi\bin\Debug\KitapSiparisListesi.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\KitapSiparisListesi\KitapSiparisListesi\obj\Debug\KitapSiparisListesi.Form1.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\KitapSiparisListesi\KitapSiparisListesi\obj\Debug\KitapSiparisListesi.Properties.Resources.resources
+c:\users\çağlayan\documents\visual studio 2012\Projects\KitapSiparisListesi\KitapSiparisListesi\obj\Debug\KitapSiparisListesi.csproj.GenerateResource.Cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\KitapSiparisListesi\KitapSiparisListesi\obj\Debug\KitapSiparisListesi.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\KitapSiparisListesi\KitapSiparisListesi\obj\Debug\KitapSiparisListesi.pdb

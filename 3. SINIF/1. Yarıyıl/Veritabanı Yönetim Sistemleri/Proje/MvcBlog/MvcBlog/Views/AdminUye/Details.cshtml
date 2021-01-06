@@ -1,0 +1,58 @@
+﻿@model MvcBlog.Models.Uye
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 class="card-header">Detay</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Yetki.Yetki1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Yetki.Yetki1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciAdi)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sifre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sifre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AdSoyad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AdSoyad)
+        </dd>
+        <dt>
+            <img class="d-flex mr-3 rounded-circle" width="75" src="@Model.Foto" />
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Foto)
+        </dd>
+        <dt>
+            Uyenin Rozetleri
+        </dt>
+        @foreach (var item in Model.Rozets)
+        {
+            <span class="tag">@item.Rozetadi,</span>
+        }
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Düzenle", "Edit", new { id = Model.Uyeid }) |
+    @Html.ActionLink("Geri Dön", "Index")
+</p>

@@ -1,0 +1,6 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\LinqQuery\LinqQuery\bin\Debug\LinqQuery.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\LinqQuery\LinqQuery\bin\Debug\LinqQuery.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\LinqQuery\LinqQuery\bin\Debug\LinqQuery.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\LinqQuery\LinqQuery\obj\Debug\LinqQuery.csprojResolveAssemblyReference.cache
+c:\users\çağlayan\documents\visual studio 2012\Projects\LinqQuery\LinqQuery\obj\Debug\LinqQuery.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\LinqQuery\LinqQuery\obj\Debug\LinqQuery.pdb

@@ -1,0 +1,5 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\SayiKontrol\SayiKontrol\bin\Debug\SayiKontrol.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\SayiKontrol\SayiKontrol\bin\Debug\SayiKontrol.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\SayiKontrol\SayiKontrol\bin\Debug\SayiKontrol.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\SayiKontrol\SayiKontrol\obj\Debug\SayiKontrol.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\SayiKontrol\SayiKontrol\obj\Debug\SayiKontrol.pdb

@@ -1,0 +1,5 @@
+c:\users\çağlayan\documents\visual studio 2012\Projects\DaireAlani\DaireAlani\bin\Debug\DaireAlani.exe.config
+c:\users\çağlayan\documents\visual studio 2012\Projects\DaireAlani\DaireAlani\bin\Debug\DaireAlani.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\DaireAlani\DaireAlani\bin\Debug\DaireAlani.pdb
+c:\users\çağlayan\documents\visual studio 2012\Projects\DaireAlani\DaireAlani\obj\Debug\DaireAlani.exe
+c:\users\çağlayan\documents\visual studio 2012\Projects\DaireAlani\DaireAlani\obj\Debug\DaireAlani.pdb
